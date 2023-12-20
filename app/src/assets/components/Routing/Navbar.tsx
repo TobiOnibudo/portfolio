@@ -1,11 +1,15 @@
+import "../../../Styles/Navbar.css"
 import {Link} from "react-router-dom";
+
+
 
 function Navbar()
 {
 
     return (
+        //TODO
+        // style the nav bar and add more content 
         <nav>
-         
             <Link to="/">
             Home 
             </Link>
