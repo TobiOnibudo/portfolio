@@ -9,7 +9,7 @@ function Navbar()
     return (
         //TODO
         // style the nav bar and add more content 
-        <nav>
+        <nav className="navbar bg-body-tertiary">
             <Link to="/">
             Home 
             </Link>
