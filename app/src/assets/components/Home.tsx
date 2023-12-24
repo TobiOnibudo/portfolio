@@ -19,6 +19,10 @@ function Home()
                 est velit egestas dui id
             </p>
 
+            {/* TODO */}
+            {/* Include Experiences */}
+            <h3> Experience</h3>
+
 
 
             

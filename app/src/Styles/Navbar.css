@@ -1,0 +1,56 @@
+.nav-header
+{
+    color: white;
+    max-width: 75rem;
+    width: 100vw;
+    top:0;
+    z-index: 3;
+    height: 5rem;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#logo
+{
+    object-fit: cover;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+}
+
+.desktopMenuImg
+{
+    object-fit: cover;
+    width: 1rem;
+    height: 1rem;
+    margin: 1rem;
+    background-color: white;
+    
+}
+
+.desktopMenuBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 2rem;
+    padding: 0 1rem;
+}
+
+.pagelink
+{
+    color: white;
+}
+
+.nav
+{
+    --bs-nav-link-hover-color : rgb(121, 119, 119) ; 
+}
+.pagelink:hover
+{
+    color: white ;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid  white;
+}
