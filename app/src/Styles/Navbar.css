@@ -2,7 +2,7 @@
 {
     color: white;
     max-width: 75rem;
-    width: 100vw;
+    width: 80vw;
     top:0;
     z-index: 3;
     height: 5rem;
@@ -47,6 +47,11 @@
 .nav
 {
     --bs-nav-link-hover-color : rgb(121, 119, 119) ; 
+    --bs-nav-link-color : rgb(121, 119, 119) ;
+}
+
+.nav:active{
+    --bs-nav-link-color : rgb(121, 119, 119) ;
 }
 .pagelink:hover
 {

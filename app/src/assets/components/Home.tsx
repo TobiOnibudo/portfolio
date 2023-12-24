@@ -1,32 +1,45 @@
 import "../../Styles/Home.css"
+import bg from "../../../public/img/image.png"
+import btnImg from "../../../public/img/hireme.png"
+import {Link} from "react-router-dom"
 
 function Home()
 {
     return (
-        <div>
-            {/* TODO  */}
-            {/* add image */}
-            <img src="../react.svg" />
+        <section id="intro">
+            <div className="introContent">
+                <span className="hello">Hello,</span>
+                <span className="introText">
+                    I'm <span className="introName">Tobi</span><br/>
+                    Software Engineer
+                </span>
+
+                <p className="introPara">
+                    I am skilled in building resilient and cost effective software with a focus on great ux designs. 
+                </p>
+                <Link to="/Contact"> 
+                    <button className="btn"> <img src={btnImg} alt="Hire Me" /> Hire Me </button>
+                </Link>
+            </div>
+
+
+
 
             {/* TODO  */}
-            {/* begin styling */}
-            <p className="intro">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Tempus imperdiet nulla malesuada pellentesque elit eget
-                gravida cum. Pulvinar mattis nunc sed blandit libero volutpat sed cras. Vitae tempus quam
-                pellentesque nec nam. Viverra nam libero justo laoreet. Magna sit amet purus gravida quis
-                blandit turpis. Id ornare arcu odio ut sem nulla pharetra. Lacus vel facilisis volutpat
-                est velit egestas dui id
-            </p>
+            {/* add image */}
+            <img src={bg} alt="" className="bg" />
 
             {/* TODO */}
             {/* Include Experiences */}
             <h3> Experience</h3>
 
+        </section>
+       
+
 
 
             
-        </div>
+      
     )
 }
 
