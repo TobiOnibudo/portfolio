@@ -1,13 +1,14 @@
 import './App.css'
 import Pages from "./assets/components/Routing/Pages"
 import Navbar from "./assets/components/Routing/Navbar"
-
+import Footer from "./assets/components/Footer"
 function App() {
  
   return (
     <div>
       <Navbar />
       <Pages />
+      <Footer text = " Tobi Onibudo"/>
     </div>
   )
 }

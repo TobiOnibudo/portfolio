@@ -18,7 +18,7 @@ function Home()
                     I am skilled in building resilient and cost effective software with a focus on great ux designs. 
                 </p>
                 <Link to="/Contact"> 
-                    <button className="btn"> <img src={btnImg} alt="Hire Me" /> Hire Me </button>
+                    <button className="btn"> <img src={btnImg} alt="Hire Me" className="btnImg" /> Hire Me </button>
                 </Link>
             </div>
 

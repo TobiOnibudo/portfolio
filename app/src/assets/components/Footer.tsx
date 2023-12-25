@@ -6,3 +6,6 @@ function Footer(props : {text: string})
         </div>
     )
 }
+
+
+export default Footer
