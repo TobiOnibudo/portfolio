@@ -10,7 +10,7 @@ function Navbar()
     return (
         //TODO
         // style the nav bar and add more content 
-        <nav className= "navbar nav-header">
+        <nav className= "navbar nav-header ">
             <img src={logo} id= "logo" alt="Tobi's image" />
             <ul className="nav"> 
                 <li className ="nav-item">
