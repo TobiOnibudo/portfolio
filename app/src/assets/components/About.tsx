@@ -9,7 +9,7 @@ function About()
     return (
         <section>
 
-          {/* Give an intro to who you are  */}
+          {/*TODO Give an intro to who you are and why you decided to hop into the tech industry */}
           <h3>
             Getting to know me 
           </h3>
@@ -17,8 +17,7 @@ function About()
 
             </p>
 
-            {/* TODO */}
-            {/* Fill in content required for skills */}
+           
             <section className="sectors" >
               <span className="skillTitle"> What I do </span>
               <span className="skillDesc"> 
@@ -62,8 +61,7 @@ function About()
 
             </section> 
             
-            {/* TODO Fill in content required for interests */}
-            {/*  */}
+
             <section className="sectors" >
               <span className="skillTitle"> Interests</span>
               <span className="skillDesc"> These are topics or areas in the industry 
