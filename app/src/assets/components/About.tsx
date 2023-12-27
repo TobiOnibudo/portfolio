@@ -1,6 +1,6 @@
 import "../../Styles/About.css"
 import AppDev from "../../img/app-dev.png"
-import CloudComputing from "../../img/cloud-computing.jpg";
+import CloudComputing from "../../img/cloud-computing.avif";
 import ML from "../../img/ml.png"
 import WebDev from "../../img/web-dev.png"
 function About()
@@ -49,7 +49,7 @@ function About()
                 </div>
 
                 <div className="skillBar">
-                  <img src={CloudComputing} alt="" className="skillBarImg" />
+                  <img src={CloudComputing} alt=""  className="skillBarImg externalImg" />
                   <div className="skillBarText">
                     <h2>Cloud Engineering</h2>
                     <p> I am passionate about utilizing the Cloud to build cost effective, resilient and secure software solutions .
@@ -69,7 +69,7 @@ function About()
 
               <div className="skillBars">
                 <div className="skillBar">
-                  <img src={ML} alt="" className="skillBarImg" />
+                  <img src={ML} alt="" className="skillBarImg externalImg" />
                   <div className="skillBarText">
                     <h2>Machine Learning</h2>
                     <p>After taking  CSCI 3151 , the Intro to Machine Learning course, at Dalhousie University.

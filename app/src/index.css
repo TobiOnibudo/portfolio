@@ -15,3 +15,14 @@ body{
   overflow: hidden;
   overflow-y: scroll ;
 }
+
+#icon
+{
+  width: 5rem;
+  height: 5rem;
+}
+
+.externalImg
+{
+  border-radius: 0.5rem;
+}

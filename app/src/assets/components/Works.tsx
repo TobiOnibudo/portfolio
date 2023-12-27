@@ -6,7 +6,7 @@ function Works(){
 
   return (
     <section id="works">
-      <h2 className="workstitle"> My Portfolio </h2> 
+      <h2 className="worksTitle"> My Portfolio </h2> 
         <span className="worksDesc">This is just a  glimpse of the side and passion projects 
         I have made through out my journey as a software engineer.
         Please check out the Portfolio page to view more

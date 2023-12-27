@@ -1,6 +1,6 @@
 import "../../../Styles/Navbar.css"
 import {Link} from "react-router-dom"
-import logo from "../../../img/favicon.png"
+import logo from "../../../img/Logo-t.png"
 import contactImg from "../../../img/contact.png"
 
 
@@ -11,7 +11,9 @@ function Navbar()
         //TODO
         // style the nav bar and add more content 
         <nav className= "navbar">
+            <Link to="/">
             <img src={logo} id= "logo" alt="Tobi's image" />
+            </Link>
             <div className="desktopMenu"> 
                     <Link  className="desktopMenuListItem" to="/">
                         Home 
