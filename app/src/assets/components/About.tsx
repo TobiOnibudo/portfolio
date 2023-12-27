@@ -1,8 +1,8 @@
 import "../../Styles/About.css"
-import AppDev from "../../../public/img/app-dev.png"
-import CloudComputing from "../../../public/img/cloud-computing.jpg";
-import ML from "../../../public/img/ml.png"
-import WebDev from "../../../public/img/web-dev.png"
+import AppDev from "../../img/app-dev.png"
+import CloudComputing from "../../img/cloud-computing.jpg";
+import ML from "../../img/ml.png"
+import WebDev from "../../img/web-dev.png"
 function About()
 {
 

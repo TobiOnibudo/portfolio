@@ -1,6 +1,7 @@
 import "../../Styles/Home.css"
-import bg from "../../../public/img/image.png"
-import btnImg from "../../../public/img/hireme.png"
+import bg from "../../img/image.png"
+import btnImg from "../../img/hireme.png"
+import Works from "./Works"
 import {Link} from "react-router-dom"
 
 function Home()
@@ -22,9 +23,13 @@ function Home()
                 </Link>
             </div>
 
-            {/* TODO */}
-            {/* Include Experiences */}
-            <h3> Experience</h3>
+            {/* TODO Include Experiences*/}
+            <h2> Experience</h2>
+
+             {/* TODO Include Projects*/}
+             <Works />
+
+
 
         </section>        
     )

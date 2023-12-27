@@ -1,7 +1,7 @@
 import "../../../Styles/Navbar.css"
 import {Link} from "react-router-dom"
-import logo from "../../../../public/img/favicon.png"
-import contactImg from "../../../../public/img/contact.png"
+import logo from "../../../img/favicon.png"
+import contactImg from "../../../img/contact.png"
 
 
 function Navbar()
@@ -17,7 +17,7 @@ function Navbar()
                         Home 
                     </Link>
                     <Link className="desktopMenuListItem " to="/Projects">
-                        Projects
+                        Portfolio
                     </Link>
                     <Link className="desktopMenuListItem " to="/About">
                         About 
