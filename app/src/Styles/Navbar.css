@@ -1,16 +1,19 @@
-.nav-header
+.navbar
 {
     color: white;
+    height: 5rem;
     max-width: 75rem;
+    margin: 0 auto;
     width: 100vw;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
     top:0;
     z-index: 3;
-    height: 5rem;
-    align-items: center;
-    margin: 0 auto;
-    top:0;
-    display: flex;
     overflow: hidden;
+    flex-wrap: nowrap;
 }
 
 #logo
@@ -42,12 +45,15 @@
     padding: 0 1rem;
 }
 
-.pagelink
+.desktopMenuListItem
 {
-    color: white;
+    margin: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color : white;
 }
 
-.nav
+/* .nav
 {
     --bs-nav-link-hover-color : rgb(121, 119, 119) ; 
     --bs-nav-link-color : rgb(121, 119, 119) ;
@@ -55,12 +61,19 @@
 
 .nav:active{
     --bs-nav-link-color : rgb(121, 119, 119) ;
-}
-.pagelink:hover
+} */
+/* .desktopMenuListItem:hover
 {
     color: white ;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid  white;
+} */
+
+.active 
+{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
 }
 
 @media screen and (max-width:840px){

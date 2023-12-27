@@ -10,29 +10,19 @@ function Navbar()
     return (
         //TODO
         // style the nav bar and add more content 
-        <nav className= "navbar nav-header ">
+        <nav className= "navbar">
             <img src={logo} id= "logo" alt="Tobi's image" />
-            <ul className="nav"> 
-                <li className ="nav-item">
-                    <Link  className="nav-link pagelink" to="/">
+            <div className="desktopMenu"> 
+                    <Link  className="desktopMenuListItem" to="/">
                         Home 
                     </Link>
-                </li>
-                
-
-                <li className ="nav-item ">
-                    <Link className="nav-link pagelink" to="/Projects">
+                    <Link className="desktopMenuListItem " to="/Projects">
                         Projects
                     </Link>
-                </li>
-
-                <li className ="nav-item " >
-                    <Link className="nav-link pagelink" to="/About">
+                    <Link className="desktopMenuListItem " to="/About">
                         About 
                     </Link>
-                </li>
-            </ul>
-
+            </div>
             <button className="desktopMenuBtn">
                 <img src={contactImg} alt="" className="desktopMenuImg" /> Contact me
             </button>
