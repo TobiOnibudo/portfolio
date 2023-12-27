@@ -62,23 +62,18 @@
 .nav:active{
     --bs-nav-link-color : rgb(121, 119, 119) ;
 } */
-/* .desktopMenuListItem:hover
+.desktopMenuListItem:hover
 {
     color: white ;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid  white;
-} */
-
-.active 
-{
-    color: yellow;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
 }
 
-@media screen and (max-width:840px){
-    .bg
+
+
+@media screen and (max-width:480px){
+    .desktopMenuBtn
     {
-        right: -10vw;
+      display: none ;
     }
 }
