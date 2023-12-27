@@ -11,7 +11,7 @@ function Home()
                 <span className="hello">Hello,</span>
                 <span className="introText">
                     I'm <span className="introName">Tobi</span><br/>
-                    Software Engineer
+                    A Software Engineer
                 </span>
 
                 <p className="introPara">
@@ -22,24 +22,11 @@ function Home()
                 </Link>
             </div>
 
-
-
-
-            {/* TODO  */}
-            {/* add image */}
-            <img src={bg} alt="" className="bg" />
-
             {/* TODO */}
             {/* Include Experiences */}
             <h3> Experience</h3>
 
-        </section>
-       
-
-
-
-            
-      
+        </section>        
     )
 }
 
