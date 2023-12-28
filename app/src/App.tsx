@@ -8,7 +8,7 @@ function App() {
     <div>
       <Navbar />
       <Pages />
-      <Footer text = " Tobi Onibudo"/>
+      <Footer />
     </div>
   )
 }

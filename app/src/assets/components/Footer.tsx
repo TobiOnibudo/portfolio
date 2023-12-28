@@ -1,20 +1,30 @@
-function Footer(props : {text: string})
+import "../../Styles/Footer.css"
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillMail } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import Resume from "../../img/resume.png"
+
+function Footer()
 {
+
+    let iconStyle = {width: "3rem", height: "3rem", margin: "0.5rem"}
     return (
-        <div className="footer">
-            {props.text}
+        <footer className="footer">
+            
+
+            <p>Copyright &#169; 2024 Tobi Onibudo. All rights received</p>
 
             <div className="links">
                 {/* linkedin */}
-                <img src="" alt="" className="link" /> 
+                <AiFillLinkedin style={iconStyle}/>
                 {/* github */}
-                <img src="" alt="" className="link" />
+                <AiFillGithub  style = {iconStyle}/> 
                 {/* resume */}
-                <img src="" alt="" className="link" />
+                <img src={Resume} alt="" className="link" />
                 {/* email */}
-                <img src="" alt="" className="link" />
+                <AiFillMail style={iconStyle}/>
             </div>
-        </div>
+        </footer>
     )
 }
 
