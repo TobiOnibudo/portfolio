@@ -3,26 +3,23 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import Resume from "../../img/resume.png"
+import Pdf from "../../img/Resume.pdf"
 
 function Footer()
 {
 
-    let iconStyle = {width: "3rem", height: "3rem", margin: "0.5rem"}
+    
     return (
         <footer className="footer">
-            
-
-            <p>Copyright &#169; 2024 Tobi Onibudo. All rights received</p>
-
             <div className="links">
                 {/* linkedin */}
-                <AiFillLinkedin style={iconStyle}/>
+                <a href="https://www.linkedin.com/in/tobi-onibudo/" target="_blank" > <AiFillLinkedin className="link"/> </a>
                 {/* github */}
-                <AiFillGithub  style = {iconStyle}/> 
+                <a href="https://github.com/TobiOnibudo" target="_blank" >  <AiFillGithub   className="link"/> </a>
                 {/* resume */}
-                <img src={Resume} alt="" className="link" />
+                    <a href={Pdf} target="_blank" ><img src={Resume} alt="" className="resume" /> </a>
                 {/* email */}
-                <AiFillMail style={iconStyle}/>
+                <a href="/Contact-me" target="_blank" > <AiFillMail className="link"/> </a>
             </div>
         </footer>
     )
