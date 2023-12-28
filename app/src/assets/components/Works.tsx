@@ -2,6 +2,7 @@ import "../../Styles/Works.css"
 import Book from "../../img/Book-project.jpg"
 import Keeper from "../../img/Google notes-project.png"
 import Blog from "../../img/Blog-website.png"
+import { Link } from "react-router-dom"
 function Works(){
 
   return (
@@ -16,6 +17,10 @@ function Works(){
             <img src={Keeper} alt="" className="worksImg" />
             <img src={Blog} alt="" className="worksImg" />
         </div>
+
+        <Link to="/Projects">
+        <button className="worksBtn">See more</button>
+        </Link>
     </section>
   )
 };

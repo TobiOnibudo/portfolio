@@ -18,13 +18,14 @@ function Home()
                 <p className="introPara">
                     I am skilled in building resilient and cost effective software with a focus on great ux designs. 
                 </p>
-                <Link to="/Contact"> 
+                <Link to="/Contact-me"> 
                     <button className="btn"> <img src={btnImg} alt="Hire Me" className="btnImg" /> Hire Me </button>
                 </Link>
             </div>
 
             {/* TODO Include Experiences*/}
             <h2> Experience</h2>
+
 
              {/* TODO Include Projects*/}
              <Works />

@@ -25,9 +25,12 @@ function Navbar()
                         About 
                     </Link>
             </div>
-            <button className="desktopMenuBtn">
-                <img src={contactImg} alt="" className="desktopMenuImg" /> Contact me
-            </button>
+
+            <Link to ="/Contact-me" id="ContactLink">
+                <button className="desktopMenuBtn">
+                    <img src={contactImg} alt="" className="desktopMenuImg" /> Contact me
+                </button>
+            </Link>
         </nav>
     )
 }
