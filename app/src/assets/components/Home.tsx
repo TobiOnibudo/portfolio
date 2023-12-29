@@ -1,8 +1,10 @@
 import "../../Styles/Home.css"
-import bg from "../../img/image.png"
 import btnImg from "../../img/hireme.png"
 import Works from "./Works"
 import {Link} from "react-router-dom"
+import NBS from "../../img/NBS_logo.jpg"
+import ShiftKey from "../../img/ShiftkeyLabs-Logo.png"
+import DashHudson from "../../img/dashhudson-logo.png"
 
 function Home()
 {
@@ -23,11 +25,42 @@ function Home()
                 </Link>
             </div>
 
-            {/* TODO Include Experiences*/}
-            <h2> Experience</h2>
+            
+            <section className="sectors" >
+              <h2 className="expTitle">Experience </h2>
 
+              <div className="expBars">   
+                    <div className="expBar">
+                    <img src={DashHudson} alt="" className="expBarImg" />
+                    <div className="expBarText">
+                        <p className="expTitle">Development Intern</p>
+                        <p className="expCompany">Dash Hudson</p>
+                        <p  className="expPeriod">Jan 2024 - present</p>
+                    </div>
+                    </div>
 
-             {/* TODO Include Projects*/}
+                    <div className="expBar">
+                    <img src={ShiftKey} alt="" className="expBarImg" />
+                    <div className="expBarText">
+                        <p className="expTitle">Student Ambassador</p>
+                        <p className="expCompany">ShiftKey Labs</p>
+                        <p className="expPeriod">Aug 2023 - present </p>
+                    </div>
+                    </div>
+
+                    <div className="expBar">
+                    <img src={NBS} alt="" className="expBarImg" />
+                    <div className="expBarText">
+                        <p className="expTitle">Junior Software Engineer</p>
+                        <p className="expCompany">NorthBay Solutions</p>
+                        <p className="expPeriod">May 2023 - Aug 2023</p>
+                    </div>
+                    </div>
+                </div>
+
+                
+                </section>
+             
              <Works />
 
 

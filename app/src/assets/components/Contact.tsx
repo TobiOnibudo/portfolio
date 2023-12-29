@@ -1,5 +1,4 @@
 import "../../Styles/Contact.css"
-import { useRef} from 'react'
 import {useForm,Resolver} from "react-hook-form"
 import emailjs from '@emailjs/browser'
 
@@ -29,14 +28,6 @@ const resolver: Resolver<FormValues> = async (values) => {
             message: ""
           } 
         }    
-        // message_error: !values.message ?{
-        //   message:
-        //   {
-        //     type: "required",
-        //     message: "This is required.",
-        //   }
-        // } : {}
-      // }
   }
 }
 

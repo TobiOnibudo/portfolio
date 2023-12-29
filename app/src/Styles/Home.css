@@ -75,7 +75,58 @@
     height: 1rem;
 }
 
+.expBars
+{
+    margin : 1.5rem;
+    width:100vw;
+    max-width: 80%;
+    text-align: left;
+}
 
+.expBar
+{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50,50,50);
+    box-shadow: 10px 10px  rgba(0,0,0,0.2);
+}
+.expBarImg
+{
+    width: 7rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+}
+
+
+
+.expBarText
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.expTitle
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.expCompany
+{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.expPeriod
+{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
 @media screen and (max-width:840px)
 {
     .bg
