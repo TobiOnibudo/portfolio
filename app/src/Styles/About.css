@@ -1,3 +1,31 @@
+.bio
+{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem auto;
+}
+.bioImg
+{
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: 2rem;
+}
+.bioDesc
+{
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+
 .sectors
 {
     overflow: hidden;
@@ -8,7 +36,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
+    margin: 3rem auto;
 }
 
 

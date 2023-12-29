@@ -1,6 +1,6 @@
 #intro 
 {
-  height: calc(100vh-100rem);   
+  height: calc(100vh-4rem);   
   width:100vw;
   max-width: 75rem;
   margin: 0 auto;
@@ -51,14 +51,23 @@
     letter-spacing: 1px;
 }
 
-.btn 
+.btn,.btn:hover
 {
     background: white;
+    color: black;
     margin: 1rem 0;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 2rem;
 }
+
+.learn:active > .btn
+{
+    color: black;
+    background: white;
+}
+
+
 
 .btnImg{
     object-fit: cover;

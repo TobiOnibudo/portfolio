@@ -3,6 +3,7 @@ import AppDev from "../../img/app-dev.png"
 import CloudComputing from "../../img/cloud-computing.avif";
 import ML from "../../img/ml.png"
 import WebDev from "../../img/web-dev.png"
+import bioImage from "../../img/bioImage.jpeg"
 function About()
 {
 
@@ -10,12 +11,19 @@ function About()
         <section>
 
           {/*TODO Give an intro to who you are and why you decided to hop into the tech industry */}
-          <h3>
-            Getting to know me 
-          </h3>
-            <p> 
+          
+          <div className="bio">
+          <img src={bioImage} alt="Picture of Tobi Onibudo" className="bioImg" />
+            <h3 className="bioTitle">
+              Getting to know me 
+            </h3>
+            <p className="bioDesc"> 
+              I am Tobi Onibudo. I am currently a third year Computer science student at Dalhousie University.
+              I am currently working with ShiftKey Labs as a Student Ambassador.I am heavily passionate about tech and
+              I am currently on the path to be a full stack Software Engineer.
 
             </p>
+          </div>
 
            
             <section className="sectors" >
