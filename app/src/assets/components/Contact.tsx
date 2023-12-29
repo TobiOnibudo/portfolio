@@ -89,13 +89,13 @@ function Contact(){
                         required: true,
                         pattern: /\S+@\S+\.\S+/
                     })}/>
-        {errors?.your_email?.message && <p className="error" >{errors.your_email.message}</p>}
+        {errors.your_email?.message != "" && <p className="error" >{errors.your_email?.message}</p>}
         
         <textarea className="msg" rows={5} placeholder="Your message" {...register("message",{
                         required: true,
                         pattern: /^[A-Za-z]+$/i
-                    })}></textarea>
-        {errors.message?.message && <p className="error">{errors.message.message}</p>}
+                    })} ></textarea>
+        {errors.message?.message != "" && <p className="error">{errors.message?.message}</p>}
         
         <button type="submit" value="Send" className="submitBtn">Submit</button>
       </form>

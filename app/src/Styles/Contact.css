@@ -57,3 +57,10 @@
     border-radius: 0.5rem;
     margin: 2rem;
 }
+
+.error
+{
+    color: red; 
+    width: 40%;
+    border-radius: 0.2rem;
+}
