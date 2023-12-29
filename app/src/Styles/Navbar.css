@@ -12,7 +12,7 @@
     position: sticky;
     top:0;
     z-index: 3;
-    overflow: hidden;
+    /* overflow: hidden; */
     flex-wrap: nowrap;
     background:rgb(30, 30, 30);;
     
@@ -23,7 +23,9 @@
     object-fit: cover;
     width: 5rem;
     height: 7rem;
+    border-bottom: none;
 }
+
 
 .desktopMenuImg
 {
@@ -58,6 +60,12 @@
     color : white;
 }
 
+.active
+{
+    color: rgb(132, 138, 143);
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid  white;
+}
 
 .desktopMenuListItem:hover
 {
@@ -66,7 +74,67 @@
     border-bottom: 3px solid  white;
 }
 
+.mobMenu
+{
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+}
 
+
+.navMenu
+{
+    position: absolute;
+    top: 4rem;
+    right:2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40,40,40);
+    border-radius: 1rem;
+    display: none;
+}
+
+.listItem
+{
+    color: white;
+    padding:0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+.listItem:hover{
+    color: white ;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid  white;
+}
+
+
+
+@media screen and (max-width:650px) {
+    .mobMenu
+    {
+        display: block;
+    }
+    .desktopMenu
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width:650px)
+{
+   .navMenu
+   {
+    display: none !important;
+   }
+}
 
 @media screen and (max-width:540px){
     .desktopMenuBtn

@@ -1,36 +1,129 @@
 import "../../../Styles/Navbar.css"
-import {Link} from "react-router-dom"
+import {NavLink,Link} from "react-router-dom"
 import logo from "../../../img/Logo-t.png"
 import contactImg from "../../../img/contact.png"
-
+import { BiMenuAltRight } from "react-icons/bi";
+import { useState } from "react";
 
 function Navbar()
 {
+    const [showMenu,setShowMenu] = useState(false)
 
     return (
         //TODO
         // style the nav bar and add more content 
         <nav className= "navbar">
+
+            
             <Link to="/">
             <img src={logo} id= "logo" alt="Tobi's image" />
             </Link>
             <div className="desktopMenu"> 
-                    <Link  className="desktopMenuListItem" to="/">
+                    <NavLink
+                        className={({ isActive }) =>
+                        [
+                        "desktopMenuListItem",
+                        isActive ? "active" : null,
+                        ]
+                        .filter(Boolean)
+                        .join(" ")} 
+                        to="/"
+                        >
                         Home 
-                    </Link>
-                    <Link className="desktopMenuListItem " to="/Projects">
+                    </NavLink>
+                    <NavLink 
+                        className={({ isActive }) =>
+                        [
+                        "desktopMenuListItem",
+                        isActive ? "active" : null,
+                        ]
+                        .filter(Boolean)
+                        .join(" ")} 
+                        to="/Projects">
                         Portfolio
-                    </Link>
-                    <Link className="desktopMenuListItem " to="/About">
+                    </NavLink>
+                    <NavLink 
+                        className={({ isActive }) =>
+                        [
+                        "desktopMenuListItem",
+                        isActive ? "active" : null,
+                        ]
+                        .filter(Boolean)
+                        .join(" ")} 
+                        to="/About">
                         About 
-                    </Link>
+                    </NavLink>
+
+                    <NavLink 
+                        className={({ isActive }) =>
+                        [
+                        "desktopMenuListItem",
+                        isActive ? "active" : null,
+                        ]
+                        .filter(Boolean)
+                        .join(" ")} 
+                        to="/Contact-me">
+                        Contact 
+                    </NavLink>
             </div>
 
-            <Link to ="/Contact-me" id="ContactLink">
+            {/* <NavLink to ="/Contact-me" id="ContactLink">
                 <button className="desktopMenuBtn">
                     <img src={contactImg} alt="" className="desktopMenuImg" /> Contact me
                 </button>
-            </Link>
+            </NavLink> */}
+
+            
+            <BiMenuAltRight className="mobMenu" onClick={()=>setShowMenu(!showMenu)}/>
+            <div className="navMenu" style={{display: showMenu? 'flex' : 'none'}}> 
+                    <NavLink
+                        className={({ isActive }) =>
+                        [
+                        "listItem",
+                        isActive ? "active" : null,
+                        ]
+                        .filter(Boolean)
+                        .join(" ")} 
+                        to="/"
+                        onClick={()=>setShowMenu(false)}>
+                        Home 
+                    </NavLink>
+                    <NavLink 
+                        className={({ isActive }) =>
+                        [
+                        "listItem",
+                        isActive ? "active" : null,
+                        ]
+                        .filter(Boolean)
+                        .join(" ")} 
+                        to="/Projects"onClick={()=>setShowMenu(false)}>
+                        Portfolio
+                    </NavLink>
+                    <NavLink 
+                        className={({ isActive }) =>
+                        [
+                        "listItem",
+                        isActive ? "active" : null,
+                        ]
+                        .filter(Boolean)
+                        .join(" ")} 
+                        to="/About"onClick={()=>setShowMenu(false)}>
+                        About 
+                    </NavLink>
+
+                    <NavLink 
+                        className={({ isActive }) =>
+                        [
+                        "listItem",
+                        isActive ? "active" : null,
+                        ]
+                        .filter(Boolean)
+                        .join(" ")} 
+                        to="/Contact-me"
+                        onClick={()=>setShowMenu(false)}>
+                        Contact 
+                    </NavLink>
+            </div>
         </nav>
     )
 }
