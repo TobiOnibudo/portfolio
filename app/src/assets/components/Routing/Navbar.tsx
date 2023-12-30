@@ -1,7 +1,6 @@
 import "../../../Styles/Navbar.css"
 import {NavLink,Link} from "react-router-dom"
 import logo from "../../../img/Logo-t.png"
-import contactImg from "../../../img/contact.png"
 import { BiMenuAltRight } from "react-icons/bi";
 import { useState } from "react";
 
@@ -66,12 +65,6 @@ function Navbar()
                         Contact 
                     </NavLink>
             </div>
-
-            {/* <NavLink to ="/Contact-me" id="ContactLink">
-                <button className="desktopMenuBtn">
-                    <img src={contactImg} alt="" className="desktopMenuImg" /> Contact me
-                </button>
-            </NavLink> */}
 
             
             <BiMenuAltRight className="mobMenu" onClick={()=>setShowMenu(!showMenu)}/>
