@@ -30,7 +30,7 @@ function particles( {givenWidth}: givenStyle ){
     
       
     <Particles 
-      id="tsparticles"
+      className="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
@@ -45,12 +45,13 @@ function particles( {givenWidth}: givenStyle ){
           "defaultThemes": {},
           "delay": 0,
           "fullScreen": {
-            "enable": true,
+            "enable": false,
             "zIndex": -1
           },
           style :
           {
-            width:  givenWidth
+            width:  givenWidth,
+            
           }
           ,
           interactivity: {
@@ -67,7 +68,7 @@ function particles( {givenWidth}: givenStyle ){
               },
               modes: {
                   push: {
-                      quantity: 4,
+                      quantity: 100,
                   },
                   repulse: {
                       distance: 200,
@@ -101,7 +102,7 @@ function particles( {givenWidth}: givenStyle ){
                       enable: true,
                       area: 800,
                   },
-                  value: 50,
+                  value: 100,
               },
               opacity: {
                   value: 0.5,

@@ -1,17 +1,26 @@
+.cover
+{
+    text-align: center;
+    height: calc(100vh-4rem);   
+    width:100vw;
+}
 .projects
 {
     height: calc(100vh-4rem);   
     width:100vw;
     max-width: 75rem;
     margin: 0 auto;
-    /* align-items: center;
-    text-align: center; */
+
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
-.particle
+.particle 
 {
-    width: 20%!important;
-    height: inherit;
+    width: 40%!important;
+    height: 100vw;
 }
 
 .portfolio
@@ -29,7 +38,8 @@
 
 .portfolioTitle
 {
-    margin: 0 auto;
+    margin: 1rem auto;
+    font-size: 3rem;
 }
 
 .stackIcon
@@ -81,7 +91,7 @@
 
     .portfolio
     {
-        margin-top: 0rem;
+        margin-top: 3rem;
     }
 
     .portfolioTitle

@@ -10,7 +10,8 @@ import { IoLogoJavascript,IoLogoCss3,IoLogoFirebase} from "react-icons/io5";
 import { BsFiletypeXml } from "react-icons/bs";
 import { SiKotlin, SiTypescript,SiMongodb } from "react-icons/si";
 import { FaReact,FaDatabase  } from "react-icons/fa";
-
+import Particle from "../particles";
+import Particle2 from "../particles2";
 
 
 
@@ -30,9 +31,14 @@ function Projects()
     let mongodb = {id : 11 ,reactIcon:<SiMongodb className="stackIcon"/>}
     let aws = {id : 12 ,reactIcon:<FaAws  className="stackIcon"/>}
     return (
-        <div className="projects">
-          
+
+        <section className="cover"> 
             <h3 className="portfolioTitle"> My Personal Projects</h3>
+           
+        <div className="projects">
+        <div className ="particle"style={{"width":"100%!important"}}>
+                        <Particle givenWidth={"10vw"}/>
+            </div>
 
             <div className="portfolio">
                 
@@ -92,8 +98,11 @@ function Projects()
 
             </div>
            
-       
+            <div className ="particle"style={{"width":"100rem!important",color:"white"}}>
+                        <Particle2 givenWidth={"10vw"}/>
+            </div>
         </div>
+        </section>
     )
 }
 

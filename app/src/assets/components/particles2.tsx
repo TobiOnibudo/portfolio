@@ -30,7 +30,7 @@ function particles2( {givenWidth}: givenStyle ){
     
       
     <Particles 
-      id="tsparticles"
+      id="tsparticles2"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
@@ -45,7 +45,7 @@ function particles2( {givenWidth}: givenStyle ){
           "defaultThemes": {},
           "delay": 0,
           "fullScreen": {
-            "enable": true,
+            "enable": false,
             "zIndex": -1
           },
           style :
