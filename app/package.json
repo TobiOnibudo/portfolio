@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://TobiOnibudo.github.io/personal_portfolio",
+  "homepage": "https://tobionibudo.github.io/portfolio/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
