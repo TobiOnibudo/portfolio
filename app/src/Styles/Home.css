@@ -126,10 +126,7 @@
     }
 
 
-    .introContent
-    {
-        font-size: 10vw;
-    }
+    
 
     .hello
     {
@@ -144,10 +141,13 @@
     }
 }
 
-@media screen and (min-height:850px)
+@media screen and (min-height:1000px) 
 {
     .introContent
     {
-        font-size: 10vw;
+        margin-top: 4rem;
+        font-size: 6rem;
+        height: fit-content;
     }
+
 }

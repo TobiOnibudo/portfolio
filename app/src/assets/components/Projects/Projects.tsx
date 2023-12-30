@@ -13,6 +13,7 @@ import { FaReact,FaDatabase  } from "react-icons/fa";
 
 
 
+
 function Projects()
 {
     let html =  { id : 0 ,reactIcon:<FaHtml5  className="stackIcon"/>}
@@ -30,6 +31,7 @@ function Projects()
     let aws = {id : 12 ,reactIcon:<FaAws  className="stackIcon"/>}
     return (
         <div className="projects">
+          
             <h3 className="portfolioTitle"> My Personal Projects</h3>
 
             <div className="portfolio">
@@ -90,7 +92,7 @@ function Projects()
 
             </div>
            
-            
+       
         </div>
     )
 }
