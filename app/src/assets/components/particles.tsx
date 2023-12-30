@@ -1,5 +1,4 @@
 import Particles from "react-tsparticles"
-import { loadFull } from "tsparticles"
 import type { Container, Engine } from "tsparticles-engine"
 import { useCallback } from "react"
 import { loadSlim } from "tsparticles-slim"
@@ -30,7 +29,7 @@ function particles( {givenWidth}: givenStyle ){
     
       
     <Particles 
-      id="tsparticles"
+      className="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
@@ -40,7 +39,7 @@ function particles( {givenWidth}: givenStyle ){
               },
               
           },
-          fpsLimit: 70,
+          fpsLimit: 120,
           "clear": true,
           "defaultThemes": {},
           "delay": 0,
@@ -50,7 +49,7 @@ function particles( {givenWidth}: givenStyle ){
           },
           style :
           {
-            width:  givenWidth
+            width:  givenWidth,  
           }
           ,
           interactivity: {
@@ -67,7 +66,7 @@ function particles( {givenWidth}: givenStyle ){
               },
               modes: {
                   push: {
-                      quantity: 4,
+                      quantity: 10,
                   },
                   repulse: {
                       distance: 200,
@@ -77,13 +76,13 @@ function particles( {givenWidth}: givenStyle ){
           },
           particles: {
               color: {
-                  value: "rgb(0, 129, 251)",
+                  value: "rgb(255, 255, 255)",
               },
               links: {
-                  color: "rgb(0, 129, 251)",
+                  color: "rgb(255, 255, 255)",
                   distance: 150,
                   enable: true,
-                  opacity: 0.5,
+                  opacity: 0.2,
                   width: 1,
               },
               move: {
@@ -93,7 +92,7 @@ function particles( {givenWidth}: givenStyle ){
                       default: "bounce",
                   },
                   random: false,
-                  speed: 3,
+                  speed: 1,
                   straight: false,
               },
               number: {
@@ -101,7 +100,7 @@ function particles( {givenWidth}: givenStyle ){
                       enable: true,
                       area: 800,
                   },
-                  value: 50,
+                  value: 80,
               },
               opacity: {
                   value: 0.5,
@@ -110,7 +109,7 @@ function particles( {givenWidth}: givenStyle ){
                   type: "circle",
               },
               size: {
-                  value: { min: 1, max: 5 },
+                  value: { min: 1, max: 4 },
               },
                 },
                 detectRetina: true,
