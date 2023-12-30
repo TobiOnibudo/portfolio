@@ -1,5 +1,4 @@
 import Particles from "react-tsparticles"
-import { loadFull } from "tsparticles"
 import type { Container, Engine } from "tsparticles-engine"
 import { useCallback } from "react"
 import { loadSlim } from "tsparticles-slim"
