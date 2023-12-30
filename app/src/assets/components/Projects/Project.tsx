@@ -26,6 +26,7 @@ function Project ({
   return (
     <div className="project">
         <img src={image} alt="Image representing the project" className="projImg" />
+        <a className = "link" href={link} target="_blank">
         <div className="projDetails">
             <h4 className="projTitle"> {Title} </h4>
                 <p className="projDesc">{description}</p>
@@ -37,7 +38,7 @@ function Project ({
                 </div>
 
         </div>  
-        <a className = "link" href={link} target="_blank"> <button className="projRepo">View</button> </a>
+       <button className="projRepo">View</button> </a>
        
    
     </div>
