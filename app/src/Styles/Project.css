@@ -3,19 +3,21 @@
 {
     align-items: center;
     text-align: center;
-    width: 28rem;
+    width: 30rem;
     margin-bottom: 5rem;
     padding:1rem;
-    background: rgb(50,50,50);
+    background: rgb(40,40,40);
     border-radius: 1rem;
-    box-shadow: 10px 10px  rgba(0,0,0,0.2);
+    box-shadow: 10px 10px  rgba(0, 0, 0, 0.2);
 }
 
 .projDetails
 {
-    background: rgb(20,20,20);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 2rem;
+    padding-bottom: 0.5rem;
 }
+
 
 .projImg
 {
@@ -29,7 +31,7 @@
 {
     padding: 0.5rem 0rem ;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: black;
     background: white;
     border-top-left-radius: 2rem;
@@ -38,9 +40,14 @@
 
 .projDesc
 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 0.9rem;
-    padding: 0rem 1rem;
+    padding: 0.2rem 1rem;
+    height: 7.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  
 }
 
 .projRepo,.projRepo:hover
@@ -57,31 +64,57 @@
 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.stackIcon
+{
+    margin: 0 0.8rem;
+    
 }
 
 .link{
     text-decoration: none;
 }
 
-@media screen and  (max-width: 950px ){
+.techStack
+{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+
+@media screen and  (max-width: 950px){
     .project
     {
         font-size: 1rem;
         font-weight: 200;
         /* height: calc(100vh-2rem); */
-        width: 21rem;
+        width: 24rem;
         align-items: center;
     }
 
     .projTitle
     {
         font-size: 1rem;
-        font-weight: 300;
+        font-weight: 600;
     }
     .projDesc 
     {
         font-size: 0.9rem;
-        font-weight: 300;
+        font-weight: 300;        
+    }
+
+    .stackIcon
+    {
+        margin: 0.5rem;
+    }
+
+    .techStack
+    {
+        font-size: 1rem;
+        font-weight: 600;
+        padding-top: 3rem;
     }
 }
 
@@ -92,17 +125,39 @@
         margin-bottom: 2rem;
         margin-top: 1rem;
     }
+
+    .projTitle
+    {
+        font-size: 1.5rem;
+    }
+
+
 }
 
-/* @media screen and  (max-height: 700px ){
-    .project
+@media screen and  (max-width: 400px)
+{
+    .projDesc
     {
-        height: 10rem;
-        font-size: 1rem;
-        font-weight: 200;
+        font-size: 0.5rem;
+        height:4rem;
+    }
+
+    .projDetails
+    {
+        font-size: 2rem;
+    }
+
+    .projTitle
+    {
+        font-size: 0.9rem;
+    }
+
+    .projRepo
+    {
+        font-size: 0.8rem;
     }
 
     
-} */
+}  
 
 

@@ -16,7 +16,8 @@
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    width:90%;
+    width:100%;
+    max-width: 75rem;
     margin: 2rem auto;
 }
 
@@ -27,12 +28,13 @@
 
 .stackIcon
 {
-
+    margin: 0.3rem 0.1rem ;
+    font-size: 2rem;
 }
 
 .projectCard
 {
- 
+    width: fit-content;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -45,7 +47,7 @@
     .portfolio
     {
         justify-content: center;
-        margin: 0 ;
+        margin: 0 auto;
     }
     .portfolioTitle
     {
@@ -83,4 +85,12 @@
     }
 }
 
+@media screen and (min-height : 300px) 
+{
+    .projectCard
+    {
+        justify-content: center;
+        align-items: center;
+    }
 
+}
