@@ -1,14 +1,15 @@
 import "../../../Styles/Projects.css"
 import Project from "./Project";
-import book from "../../../img/Book-project.jpg"
+import book from "../../../img/Book-img.png"
 import { FaHtml5 } from "react-icons/fa6";
 
 function Projects()
 {
     return (
-        <div className="portfolio">
-         Projects 
+        <div className="projects">
+            <h3 className="portfolioTitle"> My Personal Projects</h3>
 
+            <div className="portfolio">
             <Project 
                 Title="Personal Library" 
                 description="This is a personal book library made for
@@ -32,6 +33,7 @@ function Projects()
                     {id:1,reactIcon:<FaHtml5  className="stackIcon"/>}
                 ]} 
             />
+            </div>
         </div>
     )
 }

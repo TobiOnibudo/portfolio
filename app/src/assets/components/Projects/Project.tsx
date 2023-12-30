@@ -24,16 +24,18 @@ function Project ({
     link
 } : ProjectProps) {
   return (
-    <div>
+    <div className="project">
         <img src={image} alt="Image representing the project" className="projImg" />
+        <div className="projDetails">
         <h4 className="projTitle"> {Title} </h4>
-        <p className="projDesc">{description}</p>
-        
-        <div>{stack.map((item)=> 
-        {
-            return <div key= {item.id.toString()} >{item.reactIcon} </div>
-        })}</div>
-        <a href={link} target="_blank"> <button className="projRepo">View</button> </a>
+            <p className="projDesc">{description}</p>
+            <div className="stackIcons"> {stack.map((item)=> 
+            {
+                return <div key= {item.id.toString()} >{item.reactIcon} </div>
+            })}</div>
+            <a className = "link" href={link} target="_blank"> <button className="projRepo">View</button> </a>
+        </div>
+   
     </div>
   )
 };
