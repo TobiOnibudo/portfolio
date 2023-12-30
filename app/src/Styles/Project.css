@@ -27,9 +27,13 @@
 
 .projTitle
 {
-    padding-top: 1rem;
+    padding: 0.5rem 0rem ;
     font-weight: 300;
     font-size: 2rem;
+    color: black;
+    background: white;
+    border-top-left-radius: 2rem;
+    border-top-right-radius:2rem;
 }
 
 .projDesc
@@ -44,7 +48,7 @@
     background: white;
     color: black;
     margin: 1rem 0;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 2rem;
 }
@@ -58,3 +62,47 @@
 .link{
     text-decoration: none;
 }
+
+@media screen and  (max-width: 950px ){
+    .project
+    {
+        font-size: 1rem;
+        font-weight: 200;
+        /* height: calc(100vh-2rem); */
+        width: 21rem;
+        align-items: center;
+    }
+
+    .projTitle
+    {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .projDesc 
+    {
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+}
+
+@media screen and (min-height : 1000px) and (max-width : 1000px)
+{
+    .project
+    {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+}
+
+/* @media screen and  (max-height: 700px ){
+    .project
+    {
+        height: 10rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    
+} */
+
+

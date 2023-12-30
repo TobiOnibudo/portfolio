@@ -1,9 +1,86 @@
-.portfolio
+.projects
 {
     height: calc(100vh-4rem);   
     width:100vw;
     max-width: 75rem;
     margin: 0 auto;
-    overflow: hidden;  
-    position: relative;
+    align-items: center;
+    text-align: center;
 }
+
+.portfolio
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width:90%;
+    margin: 2rem auto;
+}
+
+.portfolioTitle
+{
+    margin: 0 auto;
+}
+
+.stackIcon
+{
+
+}
+
+.projectCard
+{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width : 900px) {
+    .portfolio
+    {
+        justify-content: center;
+        margin: 0 ;
+    }
+    .portfolioTitle
+    {
+        margin-top: 1rem;
+    }
+    .projectCard
+    {
+        margin-top: 2rem ;
+        height: calc(100vh-3rem);
+        justify-content: center;
+    }
+}
+
+@media screen and (min-height : 1000px) and (max-width : 1000px)
+{
+    .projectCard
+    {
+        height: 5%;
+        margin-top: 0;
+        justify-content: center;
+    }
+    .projects{
+        max-width: 85rem;
+    }
+
+    .portfolio
+    {
+        margin-top: 0rem;
+    }
+
+    .portfolioTitle
+    {
+        margin: 0.5rem 0rem;
+    
+    }
+}
+
+
