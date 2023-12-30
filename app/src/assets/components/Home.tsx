@@ -5,12 +5,19 @@ import {Link} from "react-router-dom"
 import NBS from "../../img/NBS_logo.jpg"
 import ShiftKey from "../../img/ShiftkeyLabs-Logo.png"
 import DashHudson from "../../img/dashhudson-logo.png"
+import Particle from "./particles"
+
 
 function Home()
 {
     return (
+        
         <section id="intro">
+            <div style={{"width":"10rem"}}>
+            <Particle givenWidth = '100%'/>
+            </div>
             <div className="introContent">
+           
                 <span className="hello">Hello,</span>
                 <span className="introText">
                     I'm <span className="introName">Tobi</span><br/>
@@ -23,7 +30,9 @@ function Home()
                 <Link to="/About" className="learn"> 
                     <button className="btn"> <img src={btnImg} alt="Learn More" className="btnImg" /> Learn More </button>
                 </Link>
+               
             </div>
+        
 
             
             <section className="sectors" >
