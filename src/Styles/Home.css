@@ -120,26 +120,27 @@
 }
 @media screen and (max-width:840px)
 {
-    .bg
-    {
-        right: -10vw;
-    }
-
-
-    
-
     .hello
     {
         font-size: 4.5vw;
     }
-}
 
-@media screen and (max-width:480px){
-    .bg
+    .expBars
     {
-        right: -20vw;
+        margin: auto 0rem;
+    }
+
+    .expBarImg
+    {
+        width: 7rem;
+        height: 6rem;
+    }
+    .expTitle
+    {
+        font-size: 1rem;
     }
 }
+
 
 @media screen and (min-height:1000px) 
 {
