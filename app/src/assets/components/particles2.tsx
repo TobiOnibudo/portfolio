@@ -1,4 +1,5 @@
 import Particles from "react-tsparticles"
+import { loadFull } from "tsparticles"
 import type { Container, Engine } from "tsparticles-engine"
 import { useCallback } from "react"
 import { loadSlim } from "tsparticles-slim"
@@ -29,7 +30,7 @@ function particles2( {givenWidth}: givenStyle ){
     
       
     <Particles 
-      id="tsparticles"
+      className="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
@@ -76,7 +77,7 @@ function particles2( {givenWidth}: givenStyle ){
           },
           particles: {
               color: {
-                  value: "rgb(0, 129, 251)",
+                  value: "rgb(255,255, 255)",
               },
               links: {
                   color: "rgb(0, 129, 251)",

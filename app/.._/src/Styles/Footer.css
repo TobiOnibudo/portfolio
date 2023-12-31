@@ -1,0 +1,51 @@
+.footer
+{
+    width:100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(40,40,40);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 2rem;
+    overflow-x: hidden;
+}
+
+
+.link
+{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.resume
+{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.2rem;
+}
+
+.links
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+    height: 100%;
+}
+
+/* @media screen and (min-height: 700px) {
+    .footer
+    {
+        position: sticky;
+        bottom: 0;
+    }
+} */
+
