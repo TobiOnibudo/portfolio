@@ -1,4 +1,4 @@
-import "../../Styles/Contact.css"
+import "./Contact.css"
 import {useForm,Resolver} from "react-hook-form"
 import emailjs from '@emailjs/browser'
 
