@@ -1,9 +1,9 @@
-import "../../Styles/About.css"
-import AppDev from "../../img/app-dev.png"
-import CloudComputing from "../../img/cloud-computing.avif";
-import ML from "../../img/ml.png"
-import WebDev from "../../img/web-dev.png"
-import bioImage from "../../img/bioImage.jpeg"
+import "./About.css"
+import AppDev from "../../../img/app-dev.png"
+import CloudComputing from "../../../img/cloud-computing.avif";
+import ML from "../../../img/ml.png"
+import WebDev from "../../../img/web-dev.png"
+import bioImage from "../../../img/bioImage.jpeg"
 function About()
 {
 
