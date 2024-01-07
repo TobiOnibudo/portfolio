@@ -1,11 +1,11 @@
-import "../../Styles/Home.css"
-import btnImg from "../../img/hireme.png"
-import Works from "./Works"
+import "./Home.css"
+import btnImg from "../../../img/hireme.png"
+import Works from "../Works"
 import {Link} from "react-router-dom"
-import NBS from "../../img/NBS_logo.jpg"
-import ShiftKey from "../../img/ShiftkeyLabs-Logo.png"
-import DashHudson from "../../img/dashhudson-logo.png"
-import Particle from "./particles"
+import NBS from "../../../img/NBS_logo.jpg"
+import ShiftKey from "../../../img/ShiftkeyLabs-Logo.png"
+import DashHudson from "../../../img/dashhudson-logo.png"
+import Particle from "../particles"
 
 
 function Home()
