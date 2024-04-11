@@ -1,9 +1,10 @@
 import "./Footer.css"
 import { AiFillGithub } from "react-icons/ai";
+import { AiFillMail } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import Resume from "../../../img/resume.png"
 import Pdf from "../../../img/Resume.pdf"
-
+import { Link } from "react-router-dom";
 
 function Footer()
 {
@@ -16,6 +17,8 @@ function Footer()
                 <a href="https://github.com/TobiOnibudo" target="_blank" >  <AiFillGithub   className="link"/> </a>
                 {/* resume */}
                     <a href={Pdf} target="_blank" ><img src={Resume} alt="" className="resume" /> </a>
+                {/* email */}
+               <Link to="/Contact-me">  <AiFillMail className="link"/> </Link> 
             </div>
         </footer>
     )
