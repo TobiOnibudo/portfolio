@@ -4,10 +4,6 @@ import Navbar from "./assets/components/Routing/Navbar"
 import Footer from "./assets/components/Footer/Footer"
 
 function App() {
-
-  
-
-  
   return (
     <div>
       <Navbar />
