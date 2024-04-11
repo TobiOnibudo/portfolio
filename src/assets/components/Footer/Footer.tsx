@@ -4,6 +4,7 @@ import { AiFillMail } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import Resume from "../../../img/resume.png"
 import Pdf from "../../../img/Resume.pdf"
+import { Link } from "react-router-dom";
 
 function Footer()
 {
@@ -19,7 +20,7 @@ function Footer()
                 {/* resume */}
                     <a href={Pdf} target="_blank" ><img src={Resume} alt="" className="resume" /> </a>
                 {/* email */}
-                <a href="portfolio/Contact-me" target="_blank" > <AiFillMail className="link"/> </a>
+                <Link to="/Contact-me" target="_blank">  <AiFillMail className="link"/> </Link>
             </div>
         </footer>
     )
