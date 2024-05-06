@@ -4,8 +4,9 @@ import Works from "../Works"
 import {Link} from "react-router-dom"
 import NBS from "../../../img/NBS_logo.jpg"
 import ShiftKey from "../../../img/ShiftkeyLabs-Logo.png"
-import DashHudson from "../../../img/dashhudson-logo.png"
+import DashHudson from "@/img/dashhudson-logo.png"
 import Particle from "../particles"
+import Experience from "../shared/Experience"
 
 
 function Home()
@@ -39,41 +40,30 @@ function Home()
               <h2 className="expTitle">Experience </h2>
 
               <div className="expBars">   
-                    <div className="expBar">
-                    <img src={DashHudson} alt="" className="expBarImg" />
-                    <div className="expBarText">
-                        <p className="expTitle">Development Intern</p>
-                        <p className="expCompany">Dash Hudson</p>
-                        <p  className="expPeriod">Jan 2024 - present</p>
-                    </div>
-                    </div>
+                    <Experience 
+                        source={DashHudson} 
+                        title="Development Intern" 
+                        company="Dash Hudson" 
+                        dateRange="Jan 2024 - April 2024"  
+                    />
 
-                    <div className="expBar">
-                    <img src={ShiftKey} alt="" className="expBarImg" />
-                    <div className="expBarText">
-                        <p className="expTitle">Student Ambassador</p>
-                        <p className="expCompany">ShiftKey Labs</p>
-                        <p className="expPeriod">Aug 2023 - present </p>
-                    </div>
-                    </div>
+                    <Experience 
+                        source={ShiftKey} 
+                        title="Student Ambassador" 
+                        company="ShiftKey Labs" 
+                        dateRange="Aug 2023 - present"  
+                    />
 
-                    <div className="expBar">
-                    <img src={NBS} alt="" className="expBarImg" />
-                    <div className="expBarText">
-                        <p className="expTitle">Junior Software Engineer</p>
-                        <p className="expCompany">NorthBay Solutions</p>
-                        <p className="expPeriod">May 2023 - Aug 2023</p>
-                    </div>
-                    </div>
+                    <Experience 
+                        source={NBS} 
+                        title="Junior Software Engineer" 
+                        company="NorthBay Solutions" 
+                        dateRange="May 2023 - Aug 2023"  
+                    />
                 </div>
+            </section>
 
-                
-                </section>
-             
-             <Works />
-
-
-
+            <Works />
         </section>        
     )
 }
