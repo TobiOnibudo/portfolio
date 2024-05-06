@@ -43,3 +43,40 @@
     font-size: 0.8rem;
     font-weight: 200;
 }
+
+@media screen and (max-width:840px)
+{
+
+    .expBarImg
+    {
+        width: 7rem;
+        height: 6rem;
+    }
+    .expTitle
+    {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:500px)
+{
+
+.expBarImg
+{
+    width: 6rem;
+    height: 6rem;
+}
+.expTitle
+{
+    font-size: 0.8rem;
+}
+
+.expCompany
+{
+    font-size: 0.7rem;
+}
+
+.expPeriod{
+    font-size: 0.5rem;   
+}
+}
