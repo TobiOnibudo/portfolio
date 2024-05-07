@@ -23,6 +23,6 @@ function Works(){
         </Link>
     </section>
   )
-};
+}
 
 export default Works;

@@ -18,6 +18,6 @@ function Experience({source,title,company,dateRange} : Props){
     </div>
     </div>
   )
-};
+}
 
 export default Experience;

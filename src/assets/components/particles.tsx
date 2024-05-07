@@ -117,6 +117,6 @@ function particles( {givenWidth}: givenStyle ){
         />
  
   )
-};
+}
 
 export default particles;

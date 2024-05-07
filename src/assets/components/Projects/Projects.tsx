@@ -16,19 +16,19 @@ import { FaReact,FaDatabase  } from "react-icons/fa";
 
 function Projects()
 {
-    let html =  { id : 0 ,reactIcon:<FaHtml5  className="stackIcon"/>}
-    let java = { id : 1 ,reactIcon:<FaJava className="stackIcon"/>}
-    let css = { id : 2 ,reactIcon: <IoLogoCss3 className="stackIcon"/>} 
-    let xml  = { id : 3 ,reactIcon:<BsFiletypeXml className="stackIcon"/>}
-    let kotlin = { id : 4 ,reactIcon:<SiKotlin className="stackIcon"/>}
-    let javascript =  { id : 5 ,reactIcon:<IoLogoJavascript className="stackIcon"/>}
-    let react =  { id : 6 ,reactIcon: <FaReact className="stackIcon"/>}
-    let firebase =  { id : 7 ,reactIcon:<IoLogoFirebase className="stackIcon"/>}
-    let sql = {id : 8 ,reactIcon:<FaDatabase className="stackIcon"/>}
-    let typescript = {id : 9 ,reactIcon:<SiTypescript className="stackIcon"/>}
-    let nodejs = {id : 10 ,reactIcon:<FaNode className="stackIcon"/>}
-    let mongodb = {id : 11 ,reactIcon:<SiMongodb className="stackIcon"/>}
-    let aws = {id : 12 ,reactIcon:<FaAws  className="stackIcon"/>}
+    const html =  { id : 0 ,reactIcon:<FaHtml5  className="stackIcon"/>}
+    const java = { id : 1 ,reactIcon:<FaJava className="stackIcon"/>}
+    const css = { id : 2 ,reactIcon: <IoLogoCss3 className="stackIcon"/>} 
+    const xml  = { id : 3 ,reactIcon:<BsFiletypeXml className="stackIcon"/>}
+    const kotlin = { id : 4 ,reactIcon:<SiKotlin className="stackIcon"/>}
+    const javascript =  { id : 5 ,reactIcon:<IoLogoJavascript className="stackIcon"/>}
+    const react =  { id : 6 ,reactIcon: <FaReact className="stackIcon"/>}
+    const firebase =  { id : 7 ,reactIcon:<IoLogoFirebase className="stackIcon"/>}
+    const sql = {id : 8 ,reactIcon:<FaDatabase className="stackIcon"/>}
+    const typescript = {id : 9 ,reactIcon:<SiTypescript className="stackIcon"/>}
+    const nodejs = {id : 10 ,reactIcon:<FaNode className="stackIcon"/>}
+    const mongodb = {id : 11 ,reactIcon:<SiMongodb className="stackIcon"/>}
+    const aws = {id : 12 ,reactIcon:<FaAws  className="stackIcon"/>}
     return (
         <div className="projects">
           

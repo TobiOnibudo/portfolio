@@ -2,13 +2,13 @@ import "../../../Styles/Project.css"
 
 type icon = 
 {
-    id : Number,
+    id : number,
     reactIcon : React.ReactNode 
 }
 
 type ProjectProps = {
-    Title : String;
-    description : String;
+    Title : string;
+    description : string;
     image: string;
     stack : Array<icon>;
     link : string
@@ -31,13 +31,13 @@ function Project ({
             <a className = "link" href={link} target="_blank">
             <div className="projDetails">
                 <h4 className="projTitle"> {Title} </h4>
-                    <p className="projDesc">{description}</p>
-                    <p className="techStack">Tech Stack</p>
-                    <div className="stackIcons"> {stack.map((item)=> 
-                        {
-                            return <div key= {item.id.toString()}  className="stackIcon">{item.reactIcon} </div>
-                        })}
-                    </div>
+                <div className="projDesc">{description}</div>
+                <p className="techStack">Tech Stack</p>
+                <div className="stackIcons"> {stack.map((item)=> 
+                    {
+                        return <div key= {item.id.toString()}  className="stackIcon">{item.reactIcon} </div>
+                    })}
+                </div>
 
             </div>  
         <button className="projRepo">View</button> </a>
@@ -46,6 +46,6 @@ function Project ({
         </div>
     </section>
   )
-};
+}
 
 export default Project;
