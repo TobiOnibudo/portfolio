@@ -4,7 +4,9 @@ import Works from "../Works"
 import {Link} from "react-router-dom"
 import NBS from "../../../img/NBS_logo.jpg"
 import ShiftKey from "../../../img/ShiftkeyLabs-Logo.png"
+import Cobweb from "@/img/cobweb.jpeg"
 import DashHudson from "@/img/dashhudson-logo.png"
+import DalCSS from '@/img/dal-css-logo.png'
 import Particle from "../particles"
 import Experience from "../shared/Experience"
 
@@ -39,7 +41,20 @@ function Home()
             <section className="sectors" >
               <h2 className="expTitle">Experience </h2>
 
-              <div className="expBars">   
+              <div className="expBars"> 
+                    <Experience
+                        source={DalCSS}
+                        title="Vice President External"
+                        company="Dalhousie Computer Science Society"
+                        dateRange="May 2024 - Present"
+                    />
+
+                    <Experience
+                        source={Cobweb}
+                        title="Vice President Outreach"
+                        company="COBWEB (Halifax Chapter)"
+                        dateRange="March 2024 - Present"
+                    />  
                     <Experience 
                         source={DashHudson} 
                         title="Development Intern" 
