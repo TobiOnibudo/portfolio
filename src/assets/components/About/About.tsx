@@ -8,20 +8,18 @@ function About()
 {
 
     return (
-        <section>
-
-          {/*TODO Give an intro to who you are and why you decided to hop into the tech industry */}
-          
+        <section>          
           <div className="bio">
           <img src={bioImage} alt="Picture of Tobi Onibudo" className="bioImg" />
             <h3 className="bioTitle">
               Getting to know me 
             </h3>
             <p className="bioDesc"> 
-              I am Tobi Onibudo. I am currently a third year Computer science student at Dalhousie University.
-              I am currently working with ShiftKey Labs as a Student Ambassador.I am heavily passionate about tech and
-              I am currently on the path to be a full stack Software Engineer.
-
+            Hello! I'm Tobi Onibudo, a third-year Computer Science student at Dalhousie University. 
+            Currently, I'm immersed in the world of technology as a Student Ambassador at ShiftKey Labs, 
+            while also serving as the Vice President External for the Dalhousie Computer Science Society. 
+            My passion lies in becoming a full-stack Software Engineer, and 
+            I'm dedicated to honing my skills to make meaningful contributions in the tech industry.
             </p>
           </div>
 
