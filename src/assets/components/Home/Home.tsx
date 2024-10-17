@@ -7,6 +7,7 @@ import ShiftKey from "../../../img/ShiftkeyLabs-Logo.png"
 import Cobweb from "@/img/cobweb.jpeg"
 import DashHudson from "@/img/dashhudson-logo.png"
 import DalCSS from '@/img/dal-css-logo.png'
+import CPPIB from '@/img/CPPIB.jpg'
 import Particle from "../particles"
 import Experience from "../shared/Experience"
 
@@ -41,7 +42,14 @@ function Home()
             <section className="sectors" >
               <h2 className="expTitle">Experience </h2>
 
-              <div className="expBars"> 
+                <div className="expBars">
+                    <Experience
+                        source={CPPIB}
+                        title="Senior Intern Engineer"
+                        company="CPP Investments"
+                        dateRange="Sep 2024 - Present"
+                    />
+
                     <Experience
                         source={DalCSS}
                         title="Vice President External"
