@@ -5,10 +5,12 @@ import quiz from "../../../img/Quiz-img.jpg"
 import Social from "../../../img/SM-img.jpg"
 import Blog from "../../../img/Blog-img.png"
 import SmartSearch from "../../../img/Smart-search-img.png"
+import threads from "../../../img/threads.webp"
+import ecommerce from "../../../img/eCommerce-logo.jpg"
 import { FaHtml5, FaJava,FaNode,FaAws} from "react-icons/fa6";
 import { IoLogoJavascript,IoLogoCss3,IoLogoFirebase} from "react-icons/io5";
 import { BsFiletypeXml } from "react-icons/bs";
-import { SiKotlin, SiTypescript,SiMongodb } from "react-icons/si";
+import { SiKotlin, SiTypescript,SiMongodb,SiNextdotjs } from "react-icons/si";
 import { FaReact,FaDatabase  } from "react-icons/fa";
 
 
@@ -29,6 +31,7 @@ function Projects()
     const nodejs = {id : 10 ,reactIcon:<FaNode className="stackIcon"/>}
     const mongodb = {id : 11 ,reactIcon:<SiMongodb className="stackIcon"/>}
     const aws = {id : 12 ,reactIcon:<FaAws  className="stackIcon"/>}
+    const nextjs = {id : 13, reactIcon:<SiNextdotjs  className="stackIcon"/>}
     return (
         <div className="projects">
           
@@ -36,6 +39,21 @@ function Projects()
 
             <div className="portfolio">
                 
+                <div className="projectCard" data-scroll>
+                    <Project 
+                        Title="Threads Clone" 
+                        description="This is a Threads clone app built with Clerk, MongoDB, and Next.js, enabling users to share posts and engage in discussions." image={threads} link = {"https://github.com/TobiOnibudo/threads"}
+                        stack={[nextjs,typescript, html,css,mongodb]} 
+                    />
+                </div>
+
+                <div className="projectCard" data-scroll>
+                    <Project 
+                        Title="Ecommerce WebApp" 
+                        description="This is an e-commerce website with a catalog for women, men and kids. This allowed various users to browse and purchase products online." image={ecommerce} link = {"https://github.com/TobiOnibudo/Ecommerce"}
+                        stack={[typescript,react,html,css,mongodb]} 
+                    />
+                </div>
                 <div className="projectCard" data-scroll>
                     <Project 
                         Title="Personal Library" 
