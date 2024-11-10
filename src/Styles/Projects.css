@@ -1,3 +1,10 @@
+.layer{
+    width:80%;
+    margin: auto;
+    background: rgb(30, 30, 30,0.9);
+    height: 100%;
+}
+
 .projects
 {
     height: calc(100vh-4rem);   

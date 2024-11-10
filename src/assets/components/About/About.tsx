@@ -4,10 +4,14 @@ import CloudComputing from "../../../img/cloud-computing.avif";
 import ML from "../../../img/ml.png"
 import WebDev from "../../../img/web-dev.png"
 import bioImage from "../../../img/bioImage.jpeg"
+import Particle from "@/assets/components/particles"
+
 function About()
 {
-
     return (
+      <>
+      <Particle givenWidth = '100%'/>
+      <div className="layer">
         <section>          
           <div className="bio">
           <img src={bioImage} alt="Picture of Tobi Onibudo" className="bioImg" />
@@ -89,6 +93,8 @@ function About()
               </div>
               </section>
         </section>
+        </div>
+        </>
     )
 }
 

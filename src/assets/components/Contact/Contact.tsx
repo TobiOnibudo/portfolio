@@ -1,7 +1,7 @@
 import "./Contact.css"
 import {useForm,Resolver} from "react-hook-form"
 import emailjs from '@emailjs/browser'
-
+import Particle from "@/assets/components/particles"
 
 type FormValues = {
   your_name: string
@@ -62,7 +62,9 @@ function Contact(){
   };
 
   return (
-    
+    <>
+    <Particle givenWidth = '100%'/>
+    <div className="layer">
       <section className="contact">
       <h1 className="contactPageTitle">Contact Me</h1>
         <span className="contactDesc">
@@ -94,6 +96,8 @@ function Contact(){
 
     
       </section>
+      </div>
+      </>
   )
 }
 

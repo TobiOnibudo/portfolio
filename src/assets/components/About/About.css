@@ -8,7 +8,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 3rem auto;
+    margin: auto;
+    padding: 3rem auto;
 }
 .bioImg
 {

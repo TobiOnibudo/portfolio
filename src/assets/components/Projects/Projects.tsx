@@ -12,6 +12,8 @@ import { IoLogoJavascript,IoLogoCss3,IoLogoFirebase} from "react-icons/io5";
 import { BsFiletypeXml } from "react-icons/bs";
 import { SiKotlin, SiTypescript,SiMongodb,SiNextdotjs } from "react-icons/si";
 import { FaReact,FaDatabase  } from "react-icons/fa";
+import Particle from "@/assets/components/particles"
+
 
 
 
@@ -33,8 +35,10 @@ function Projects()
     const aws = {id : 12 ,reactIcon:<FaAws  className="stackIcon"/>}
     const nextjs = {id : 13, reactIcon:<SiNextdotjs  className="stackIcon"/>}
     return (
+        <>
+        <Particle givenWidth = '100%'/>
+        <div className="layer">
         <div className="projects">
-          
             <h3 className="portfolioTitle"> My Personal Projects</h3>
 
             <div className="portfolio">
@@ -110,8 +114,9 @@ function Projects()
 
             </div>
            
-       
         </div>
+        </div>
+        </>
     )
 }
 
