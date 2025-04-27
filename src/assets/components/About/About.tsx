@@ -19,7 +19,7 @@ function About()
               Getting to know me 
             </h3>
             <p className="bioDesc"> 
-            Hello! I'm Tobi Onibudo, a third-year Computer Science student at Dalhousie University. 
+            Hello! I'm Tobi Onibudo, a fourth-year Computer Science student at Dalhousie University. 
             Currently, I'm immersed in the world of technology as a Student Ambassador at ShiftKey Labs, 
             while also serving as the Vice President External for the Dalhousie Computer Science Society. 
             My passion lies in becoming a full-stack Software Engineer, and 
