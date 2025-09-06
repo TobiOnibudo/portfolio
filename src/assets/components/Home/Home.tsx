@@ -47,21 +47,21 @@ function Home()
                         source={CPPIB}
                         title="Senior Intern Engineer"
                         company="CPP Investments"
-                        dateRange="Sep 2024 - Present"
+                        dateRange="Sep 2024 - Dec 2024"
                     />
 
                     <Experience
                         source={DalCSS}
                         title="Vice President External"
                         company="Dalhousie Computer Science Society"
-                        dateRange="May 2024 - Present"
+                        dateRange="May 2024 - May 2025"
                     />
 
                     <Experience
                         source={Cobweb}
                         title="Vice President Outreach"
                         company="COBWEB (Halifax Chapter)"
-                        dateRange="March 2024 - Present"
+                        dateRange="March 2024 - March 2025"
                     />  
                     <Experience 
                         source={DashHudson} 
