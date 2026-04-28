@@ -1,8 +1,4 @@
 import "./About.css"
-import AppDev from "../../../img/app-dev.png"
-import CloudComputing from "../../../img/cloud-computing.avif";
-import ML from "../../../img/ml.png"
-import WebDev from "../../../img/web-dev.png"
 import bioImage from "../../../img/bioImage.jpeg"
 import Particle from "@/assets/components/particles"
 
@@ -27,7 +23,7 @@ function About()
               me—feel free to connect on{" "}
               <a
                 className="bioLink"
-                href="https://www.linkedin.com/in/tobi-onibudo/"
+                href="https://www.linkedin.com/in/tobi-onibudo/?skipRedirect=true"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -45,6 +45,13 @@ function Home()
                 <div className="expBars">
                     <Experience
                         source={CPPIB}
+                        title="Software Engineer"
+                        company="CPP Investments"
+                        dateRange="Oct 2025 - Present"
+                    />
+
+                    <Experience
+                        source={CPPIB}
                         title="Senior Intern Engineer"
                         company="CPP Investments"
                         dateRange="Sep 2024 - Dec 2024"
@@ -54,7 +61,7 @@ function Home()
                         source={DalCSS}
                         title="Vice President External"
                         company="Dalhousie Computer Science Society"
-                        dateRange="May 2024 - May 2025"
+                        dateRange="Apr 2024 - May 2025"
                     />
 
                     <Experience
@@ -62,26 +69,26 @@ function Home()
                         title="Vice President Outreach"
                         company="COBWEB (Halifax Chapter)"
                         dateRange="March 2024 - March 2025"
-                    />  
-                    <Experience 
-                        source={DashHudson} 
-                        title="Development Intern" 
-                        company="Dash Hudson" 
-                        dateRange="Jan 2024 - April 2024"  
+                    />
+                    <Experience
+                        source={ShiftKey}
+                        title="Student Ambassador"
+                        company="ShiftKey Labs"
+                        dateRange="Aug 2023 - Sep 2025"
                     />
 
-                    <Experience 
-                        source={ShiftKey} 
-                        title="Student Ambassador" 
-                        company="ShiftKey Labs" 
-                        dateRange="Aug 2023 - present"  
+                    <Experience
+                        source={DashHudson}
+                        title="Full Stack Software Engineer"
+                        company="Dash Hudson"
+                        dateRange="Jan 2024 - Apr 2024"
                     />
 
-                    <Experience 
-                        source={NBS} 
-                        title="Junior Software Engineer" 
-                        company="NorthBay Solutions" 
-                        dateRange="May 2023 - Aug 2023"  
+                    <Experience
+                        source={NBS}
+                        title="Junior Software Engineer"
+                        company="NorthBay Solutions"
+                        dateRange="May 2023 - Aug 2023"
                     />
                 </div>
             </section>

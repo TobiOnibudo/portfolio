@@ -1,109 +1,121 @@
-.layer{
-    width:80%;
-    margin: auto;
-    background: rgb(30, 30, 30,0.9);
-    height: 100%;
+.layer {
+    width: min(100%, 90rem);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 4vw, 2.5rem);
+    background: rgba(30, 30, 30, 0.92);
+    min-height: 100%;
 }
 
-.projects
-{
-    height: calc(100vh-4rem);   
-    width:100vw;
+.projects {
+    min-height: calc(100vh - 4rem);
+    width: 100%;
     max-width: 75rem;
     margin: 0 auto;
+    padding: clamp(1.5rem, 4vw, 2.5rem) clamp(0.75rem, 2vw, 1rem);
     align-items: center;
     text-align: center;
 }
 
-.particle
-{
-    width: 20%!important;
+.particle {
+    width: 20% !important;
     height: inherit;
 }
 
-.portfolio
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    align-items: stretch;
+    justify-items: center;
     text-align: center;
-    justify-content: space-between;
-    width:100%;
+    width: 100%;
     max-width: 75rem;
-    margin: 2rem auto;
+    margin: clamp(1.5rem, 3vw, 2rem) auto;
+    padding: 0;
 }
 
-.portfolioTitle
-{
-    margin: 0 auto;
+.portfolioTitle {
+    margin: 0 auto 0.25rem;
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    position: relative;
+    padding-bottom: 0.6rem;
 }
 
-.stackIcon
-{
-    margin: 0.3rem 0.1rem ;
-    font-size: 2rem;
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    .portfolioTitle {
+        background: linear-gradient(
+            105deg,
+            var(--color-text) 0%,
+            var(--color-text) 55%,
+            var(--color-accent) 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
 }
 
-.projectCard
-{
-    width: fit-content;
+.portfolioTitle::after {
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 3px;
+    margin: 0.75rem auto 0;
+    border-radius: 999px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--color-accent),
+        transparent
+    );
+}
+
+.stackIcon {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+.projectCard {
+    width: 100%;
+    max-width: min(30rem, 100%);
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
-@media screen and (max-width : 900px) {
-    .portfolio
-    {
-        justify-content: center;
-        margin: 0 auto;
+@media screen and (max-width: 900px) {
+    .portfolio {
+        margin: 1rem auto;
     }
-    .portfolioTitle
-    {
-        margin-top: 1rem;
-    }
-    .projectCard
-    {
-        margin-top: 2rem ;
-        height: calc(100vh-3rem);
-        justify-content: center;
-    }
-}
 
-@media screen and (min-height : 1000px) and (max-width : 1000px)
-{
-    .projectCard
-    {
-        height: 5%;
+    .portfolioTitle {
+        margin-top: 0.5rem;
+    }
+
+    .projectCard {
         margin-top: 0;
-        justify-content: center;
+        min-height: unset;
     }
-    .projects{
+}
+
+@media screen and (min-height: 1000px) and (max-width: 1000px) {
+    .projects {
         max-width: 85rem;
     }
 
-    .portfolio
-    {
-        margin-top: 0rem;
+    .portfolio {
+        margin-top: 0.5rem;
     }
 
-    .portfolioTitle
-    {
-        margin: 0.5rem 0rem;
-    
-    }
-}
-
-@media screen and (min-height : 300px) 
-{
-    .projectCard
-    {
-        justify-content: center;
-        align-items: center;
+    .portfolioTitle {
+        margin: 0.5rem 0;
     }
 
+    .projectCard {
+        margin-top: 0;
+        height: auto;
+    }
 }

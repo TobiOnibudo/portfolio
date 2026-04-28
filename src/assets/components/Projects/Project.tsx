@@ -25,26 +25,30 @@ function Project ({
 } : ProjectProps) {
   return (
 
-    <section className="projSec">
-        <div className="project">
-            <img src={image} alt="Image representing the project" className="projImg" />
-            <a className = "link" href={link} target="_blank">
+    <article className="project">
+        <a
+            className="projectCardLink"
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${Title} — open repository`}
+        >
+            <div className="projMedia">
+                <img src={image} alt={`${Title} preview`} className="projImg" />
+            </div>
             <div className="projDetails">
-                <h4 className="projTitle"> {Title} </h4>
+                <h4 className="projTitle">{Title}</h4>
                 <div className="projDesc">{description}</div>
                 <p className="techStack">Tech Stack</p>
-                <div className="stackIcons"> {stack.map((item)=> 
-                    {
-                        return <div key= {item.id.toString()}  className="stackIcon">{item.reactIcon} </div>
-                    })}
+                <div className="stackIcons">
+                    {stack.map((item)=> (
+                        <div key={item.id.toString()} className="stackIcon">{item.reactIcon}</div>
+                    ))}
                 </div>
-
-            </div>  
-        <button className="projRepo">View</button> </a>
-        
-    
-        </div>
-    </section>
+                <span className="projRepo">View project</span>
+            </div>
+        </a>
+    </article>
   )
 }
 

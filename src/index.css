@@ -1,3 +1,18 @@
+:root {
+  --color-bg-page: rgb(30, 30, 30);
+  --color-bg-elevated: rgb(42, 42, 42);
+  --color-bg-panel: rgba(0, 0, 0, 0.55);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-accent: rgb(0, 129, 251);
+  --color-accent-muted: rgba(0, 129, 251, 0.35);
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.82);
+  --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.35);
+  --shadow-card-hover: 0 20px 50px rgba(0, 0, 0, 0.45);
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+}
+
 *
 {
   margin: 0;
@@ -10,8 +25,8 @@
 
 
 body{
-  background: rgb(30, 30, 30);
-  color: white;
+  background: var(--color-bg-page);
+  color: var(--color-text);
   overflow: hidden;
   overflow-y: scroll ;
 }

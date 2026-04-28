@@ -12,7 +12,7 @@ function Footer()
         <footer className="footer">
             <div className="links">
                 {/* linkedin */}
-                <a href="https://www.linkedin.com/in/tobi-onibudo/" target="_blank" > <AiFillLinkedin className="link"/> </a>
+                <a href="https://www.linkedin.com/in/tobi-onibudo/?skipRedirect=true" target="_blank" rel="noopener noreferrer"> <AiFillLinkedin className="link"/> </a>
                 {/* github */}
                 <a href="https://github.com/TobiOnibudo" target="_blank" >  <AiFillGithub   className="link"/> </a>
                 {/* resume */}
