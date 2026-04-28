@@ -26,6 +26,18 @@
     padding: 0 2rem;
 }
 
+.bioLink
+{
+    color: rgb(0, 129, 251);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
+.bioLink:hover
+{
+    color: rgb(90, 175, 255);
+}
+
 
 .sectors
 {
