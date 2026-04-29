@@ -12,7 +12,7 @@ import ScrollToTop from "./ScrollToTop.tsx"
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider>
-      <BrowserRouter basename="/portfolio">
+      <BrowserRouter basename="/">
         <ScrollToTop />
         <App />
         <Toaster position="top-center" richColors closeButton />

@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import { Navigate, Route, Routes } from "react-router-dom"
 
 import About from "@/assets/components/About/About"
 import Contact from "@/assets/components/Contact/Contact"
@@ -12,6 +12,7 @@ function Main() {
       <Route path="/About" element={<About />} />
       <Route path="/Projects" element={<Projects />} />
       <Route path="/Contact-me" element={<Contact />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )
 }
