@@ -1,140 +1,137 @@
-import "../../../Styles/Projects.css"
-import Project from "./Project";
-import book from "../../../img/Book-img.png"
-import Blog from "../../../img/Blog-img.png"
-import threads from "../../../img/threads.webp"
-import ecommerce from "../../../img/eCommerce-logo.jpg"
-import vayroLogo from "../../../img/vayro-logo.png"
-import cartcloudLogo from "../../../img/cartcloud-logo.png"
-import dalLogo from "../../../img/dal-css-logo.png"
-import mlHero from "../../../img/ml.png"
-import cloudHero from "../../../img/cloud-computing.jpg"
-import { FaHtml5, FaJava, FaNode } from "react-icons/fa6";
-import { IoLogoJavascript, IoLogoCss3, IoLogoFirebase } from "react-icons/io5";
-import { BsFiletypeXml } from "react-icons/bs";
-import { SiKotlin, SiTypescript, SiMongodb, SiNextdotjs, SiGo, SiPython, SiExpo } from "react-icons/si";
-import { FaReact, FaDatabase } from "react-icons/fa";
-import Particle from "@/assets/components/particles"
+import Project from "@/assets/components/Projects/Project"
+import { ChevronDown } from "lucide-react"
+import { FaDatabase, FaJava, FaNode, FaReact } from "react-icons/fa"
+import { IoLogoCss3, IoLogoFirebase, IoLogoJavascript } from "react-icons/io5"
+import {
+  SiExpo,
+  SiGo,
+  SiKotlin,
+  SiMongodb,
+  SiNextdotjs,
+  SiPython,
+  SiSpringboot,
+  SiTypescript,
+} from "react-icons/si"
 
 function Projects() {
-    const html = { id: 0, reactIcon: <FaHtml5 className="stackIcon" /> }
-    const java = { id: 1, reactIcon: <FaJava className="stackIcon" /> }
-    const css = { id: 2, reactIcon: <IoLogoCss3 className="stackIcon" /> }
-    const xml = { id: 3, reactIcon: <BsFiletypeXml className="stackIcon" /> }
-    const kotlin = { id: 4, reactIcon: <SiKotlin className="stackIcon" /> }
-    const javascript = { id: 5, reactIcon: <IoLogoJavascript className="stackIcon" /> }
-    const react = { id: 6, reactIcon: <FaReact className="stackIcon" /> }
-    const firebase = { id: 7, reactIcon: <IoLogoFirebase className="stackIcon" /> }
-    const sql = { id: 8, reactIcon: <FaDatabase className="stackIcon" /> }
-    const typescript = { id: 9, reactIcon: <SiTypescript className="stackIcon" /> }
-    const nodejs = { id: 10, reactIcon: <FaNode className="stackIcon" /> }
-    const mongodb = { id: 11, reactIcon: <SiMongodb className="stackIcon" /> }
-    const nextjs = { id: 13, reactIcon: <SiNextdotjs className="stackIcon" /> }
-    const golang = { id: 14, reactIcon: <SiGo className="stackIcon" /> }
-    const python = { id: 15, reactIcon: <SiPython className="stackIcon" /> }
-    const expo = { id: 16, reactIcon: <SiExpo className="stackIcon" /> }
-    return (
-        <>
-            <Particle givenWidth='100%' />
-            <div className="layer">
-                <div className="projects">
-                    <h3 className="portfolioTitle"> My Personal Projects</h3>
+  const java = { id: 1, reactIcon: <FaJava /> }
+  const css = { id: 2, reactIcon: <IoLogoCss3 /> }
+  const kotlin = { id: 4, reactIcon: <SiKotlin /> }
+  const javascript = { id: 5, reactIcon: <IoLogoJavascript /> }
+  const react = { id: 6, reactIcon: <FaReact /> }
+  const firebase = { id: 7, reactIcon: <IoLogoFirebase /> }
+  const sql = { id: 8, reactIcon: <FaDatabase /> }
+  const typescript = { id: 9, reactIcon: <SiTypescript /> }
+  const nodejs = { id: 10, reactIcon: <FaNode /> }
+  const mongodb = { id: 11, reactIcon: <SiMongodb /> }
+  const nextjs = { id: 13, reactIcon: <SiNextdotjs /> }
+  const golang = { id: 14, reactIcon: <SiGo /> }
+  const python = { id: 15, reactIcon: <SiPython /> }
+  const expo = { id: 16, reactIcon: <SiExpo /> }
+  const springboot = { id: 17, reactIcon: <SiSpringboot /> }
 
-                    <div className="portfolio">
+  return (
+    <div>
+      {/* Full-viewport intro (snap-like feel) — no global scroll-snap so the footer stays reachable */}
+      <section
+        aria-labelledby="projects-heading"
+        className="flex min-h-[calc(100dvh-4rem)] flex-col justify-center scroll-mt-16 py-8 sm:py-10"
+      >
+        <header className="max-w-2xl">
+          <h1
+            id="projects-heading"
+            className="text-balance font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
+          >
+            Projects
+          </h1>
+          <p className="mt-3 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Stuff I&apos;ve shipped on the side: hackathon sprints, mobile experiments, and
+            full-stack apps I actually wanted to use. Each card opens the repo; if I left
+            it running somewhere public, there&apos;s a live site link too so you can poke
+            around without cloning anything.
+          </p>
+          <a
+            href="#projects-grid"
+            className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-primary underline-offset-4 transition-colors hover:text-primary/90 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-sm"
+          >
+            See my projects
+            <ChevronDown className="size-4 opacity-90" aria-hidden strokeWidth={2} />
+          </a>
+        </header>
+      </section>
 
-                        <div className="projectCard" data-scroll>
-                            <Project
-                                Title="Threads Clone"
-                                description="This is a Threads clone app built with Clerk, MongoDB, and Next.js, enabling users to share posts and engage in discussions." image={threads} link={"https://github.com/TobiOnibudo/threads"}
-                                stack={[nextjs, typescript, html, css, mongodb]}
-                            />
-                        </div>
+      <section
+        id="projects-grid"
+        aria-label="Project cards"
+        className="scroll-mt-[calc(4rem+0.5rem)] pb-24 pt-4 sm:scroll-mt-20 sm:pb-28 sm:pt-8"
+      >
+        <div className="mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-5 sm:gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <Project
+            Title="Threads Clone"
+            description="Threads-style social app with Clerk authentication, threaded posts and replies, and MongoDB-backed feeds."
+            link="https://github.com/TobiOnibudo/threads"
+            liveUrl="https://threads-eight-theta.vercel.app/"
+            stack={[nextjs, typescript, css, mongodb]}
+          />
+          <Project
+            Title="Vayro"
+            description="Moving-sale marketplace: listings, chat, AI price hints, maps, Firebase auth and data."
+            link="https://github.com/TobiOnibudo/vayro"
+            stack={[typescript, react, expo, firebase, css]}
+          />
 
-                        <div className="projectCard" data-scroll>
-                            <Project
-                                Title="Atlantic AI Summit — HealthByte (1st place)"
-                                description="60-hour healthcare AI challenge: dual LLM agents (persona + editor) with a reinforcement loop to model how audiences react to health articles and refine messaging. Includes a live analytics dashboard."
-                                image={mlHero}
-                                link={"https://github.com/TobiOnibudo/atlantic-ai-conference-hackathon"}
-                                stack={[nextjs, typescript, react, css, python]}
-                            />
-                        </div>
+          <Project
+            Title="CartCloud"
+            description="A multi-vendor storefront with checkout flows and basic seller tools."
+            link="https://github.com/TobiOnibudo/cartcloud"
+            liveUrl="https://cartcloud.netlify.app/"
+            stack={[typescript, react, css, mongodb, nodejs]}
+          />
 
-                        <div className="projectCard" data-scroll>
-                            <Project
-                                Title="Varyo"
-                                description="Expo mobile marketplace for pricing and selling household items when moving: listings, buyer–seller chat, AI-assisted price suggestions, and location-aware discovery."
-                                image={vayroLogo}
-                                link={"https://github.com/TobiOnibudo/vayro"}
-                                stack={[typescript, react, expo, firebase, html, css]}
-                            />
-                        </div>
+          <Project
+            Title="Atlantic AI Summit: HealthByte (1st place)"
+            description="Healthcare hackathon (~60 hr, 1st place): dual LLM agents iterate on health messaging; dashboard visualizes persona metrics and runs."
+            link="https://github.com/TobiOnibudo/atlantic-ai-conference-hackathon"
+            liveUrl="https://healthbyte-dashboard.vercel.app/"
+            stack={[nextjs, typescript, react, css, python]}
+          />
 
-                        <div className="projectCard" data-scroll>
-                            <Project
-                                Title="CartCloud"
-                                description="Full-stack marketplace so shoppers buy from many vendors in one flow and small sellers get listings, checkout, and order tools. Live demo on Netlify with a separate Node backend."
-                                image={cartcloudLogo}
-                                link={"https://github.com/TobiOnibudo/cartcloud"}
-                                stack={[typescript, react, html, css, mongodb, nodejs]}
-                            />
-                        </div>
+          <Project
+            Title="Ecommerce WebApp"
+            description="A simple retail-style site with products grouped by category and a cart through checkout."
+            link="https://github.com/TobiOnibudo/Ecommerce"
+            stack={[typescript, react, css, mongodb]}
+          />
+          <Project
+            Title="Personal Library"
+            description="An Android app for tracking books you plan to read and books you have finished, using on-device SQL storage."
+            link="https://github.com/TobiOnibudo/Book"
+            stack={[kotlin, java, sql]}
+          />
+          <Project
+            Title="Blog Website"
+            description="Posts and comments with a Node backend and database-backed pages."
+            link="https://github.com/TobiOnibudo/BlogWebsite"
+            stack={[css, javascript, nodejs, mongodb]}
+          />
 
-                        <div className="projectCard" data-scroll>
-                            <Project
-                                Title="Ecommerce WebApp"
-                                description="This is an e-commerce website with a catalog for women, men and kids. This allowed various users to browse and purchase products online." image={ecommerce} link={"https://github.com/TobiOnibudo/Ecommerce"}
-                                stack={[typescript, react, html, css, mongodb]}
-                            />
-                        </div>
-                        <div className="projectCard" data-scroll>
-                            <Project
-                                Title="Personal Library"
-                                description="This is a personal book library made for
-                        users to keep track of books they are interested in and have read. This would be really
-                        useful for fellow avid readers as it can be quite hard to keep track of hardcopy books 
-                        in their library." image={book} link={"https://github.com/TobiOnibudo/Book"}
-                                stack={[kotlin, java, xml, sql]}
-                            />
-                        </div>
+          <Project
+            Title="Ollama non-sudo installer"
+            description="Per-user Ollama install on Windows, Linux, or macOS without admin rights; includes PATH and uninstall notes."
+            link="https://github.com/TobiOnibudo/ollama-non-sudo-installer"
+            stack={[golang]}
+          />
 
-                        <div className="projectCard">
-                            <Project
-                                Title="Blog Website "
-                                description="This was made to create a blog in which a community of friends would be able to blog on several ideas with out a limit on the word count. 
-                        This can be seen as a substitute for X (formerly known as twitter) but only a few can put out content."
-                                image={Blog} link={"https://github.com/TobiOnibudo/BlogWebsite"}
-                                stack={[html, css, javascript, nodejs, mongodb]}
-                            />
-                        </div>
-
-                        <div className="projectCard">
-                            <Project
-                                Title="Ollama non-sudo installer"
-                                description="Go CLI that installs Ollama into user-space on Windows, Linux, and macOS (no admin). Documents build steps, PATH setup, usage, uninstall, and troubleshooting."
-                                image={cloudHero}
-                                link={"https://github.com/TobiOnibudo/ollama-non-sudo-installer"}
-                                stack={[golang]}
-                            />
-                        </div>
-
-                        <div className="projectCard">
-                            <Project
-                                Title="Daltweets"
-                                description="Java-based Twitter-style client and API for the Dalhousie community (multi-module repo with app and backend). Repository README is still minimal; see code on the dev branch."
-                                image={dalLogo}
-                                link={"https://github.com/TobiOnibudo/Daltweets"}
-                                stack={[java, xml, sql]}
-                            />
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </>
-    )
+          <Project
+            Title="Daltweets"
+            description="Twitter-style campus feed: Spring Boot API, React UI, and SQL-backed data."
+            link="https://github.com/TobiOnibudo/Daltweets"
+            stack={[springboot, react, sql]}
+          />
+        </div>
+      </section>
+    </div>
+  )
 }
 
-
-export default Projects;
+export default Projects

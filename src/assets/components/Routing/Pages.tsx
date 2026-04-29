@@ -1,20 +1,19 @@
+import { Routes, Route } from "react-router-dom"
 
-import { Routes, Route} from 'react-router-dom';
+import About from "@/assets/components/About/About"
+import Contact from "@/assets/components/Contact/Contact"
+import Home from "@/assets/components/Home/Home"
+import Projects from "@/assets/components/Projects/Projects"
 
-import Home from "../Home/Home";
-import About from "../About/About";
-import Projects from '../Projects/Projects';
-import Contact from "../Contact/Contact";
-
-const Main = () => {
+function Main() {
   return (
     <Routes>
-      <Route path='/' Component={Home}></Route>
-      <Route  path='/About' Component={About}></Route>
-      <Route path = '/Projects' Component={Projects}></Route>
-      <Route path = '/Contact-me' Component={Contact}></Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/About" element={<About />} />
+      <Route path="/Projects" element={<Projects />} />
+      <Route path="/Contact-me" element={<Contact />} />
     </Routes>
-  );
+  )
 }
 
-export default Main;
+export default Main

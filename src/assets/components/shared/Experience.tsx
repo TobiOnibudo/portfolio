@@ -1,23 +1,35 @@
-import "./Experience.css"
-interface Props{
-    source: string;
-    title : string;
-    company : string;
-    dateRange: string; 
+import { Card, CardContent } from "@/components/ui/card"
+import { cn } from "@/lib/utils"
+
+interface ExperienceProps {
+  source: string
+  title: string
+  company: string
+  dateRange: string
 }
 
-
-function Experience({source,title,company,dateRange} : Props){
+function Experience({ source, title, company, dateRange }: ExperienceProps) {
   return (
-    <div className="expBar">
-    <img src={source} alt="" className="expBarImg" />
-    <div className="expBarText">
-        <p className="expTitle">{title}</p>
-        <p className="expCompany">{company}</p>
-        <p className="expPeriod">{dateRange}</p>
-    </div>
-    </div>
+    <Card
+      size="sm"
+      className={cn("border-border/80 shadow-sm transition-shadow hover:shadow-md")}
+    >
+      <CardContent className="flex gap-4">
+        <img
+          src={source}
+          alt=""
+          className="size-14 shrink-0 rounded-lg border border-border object-cover"
+          width={56}
+          height={56}
+        />
+        <div className="min-w-0 flex-1 space-y-0.5">
+          <p className="font-medium leading-snug text-foreground">{title}</p>
+          <p className="text-sm text-muted-foreground">{company}</p>
+          <p className="text-xs text-muted-foreground">{dateRange}</p>
+        </div>
+      </CardContent>
+    </Card>
   )
 }
 
-export default Experience;
+export default Experience

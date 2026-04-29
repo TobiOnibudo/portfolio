@@ -1,15 +1,22 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
-import App from './App.tsx'
-import './index.css'
-import ScrollToTop from './ScrollToTop.tsx'
+import React from "react"
+import ReactDOM from "react-dom/client"
+import { BrowserRouter } from "react-router-dom"
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+import { ThemeProvider } from "@/components/theme-provider"
+import { Toaster } from "@/components/ui/sonner"
+
+import App from "./App.tsx"
+import "./index.css"
+import ScrollToTop from "./ScrollToTop.tsx"
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter basename='/portfolio'> 
-      <ScrollToTop/>
-      <App />
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter basename="/portfolio">
+        <ScrollToTop />
+        <App />
+        <Toaster position="top-center" richColors closeButton />
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 )
