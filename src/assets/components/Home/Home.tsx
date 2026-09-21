@@ -2,7 +2,6 @@ import { useEffect } from "react"
 import { Link } from "react-router-dom"
 
 import CPPIB from "@/img/CPPIB.jpg"
-import Cobweb from "@/img/cobweb.jpeg"
 import DalCSS from "@/img/dal-css-logo.png"
 import DashHudson from "@/img/dashhudson-logo.png"
 import NBS from "@/img/NBS_logo.jpg"
@@ -95,31 +94,21 @@ function Home() {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <Experience
             source={CPPIB}
-            title="Software Engineer"
+            title="Software Engineer — Enterprise Systems (Legal)"
             company="CPP Investments"
             dateRange="Oct 2025 – present"
+            logoFit="cover-left"
           />
           <Experience
             source={CPPIB}
-            title="Senior Intern Engineer"
+            title="Senior Intern Engineer — Enterprise Systems (Finance)"
             company="CPP Investments"
             dateRange="Sep 2024 – Dec 2024"
-          />
-          <Experience
-            source={DalCSS}
-            title="Vice President External"
-            company="Dalhousie Computer Science Society"
-            dateRange="May 2024 – May 2025"
-          />
-          <Experience
-            source={Cobweb}
-            title="Vice President Outreach"
-            company="COBWEB (Halifax Chapter)"
-            dateRange="Mar 2024 – Mar 2025"
+            logoFit="cover-left"
           />
           <Experience
             source={DashHudson}
-            title="Full Stack Software Engineer Intern"
+            title="Software Engineer Intern — Creators Team"
             company="Dash Social"
             dateRange="Jan 2024 – Apr 2024"
           />
@@ -131,9 +120,15 @@ function Home() {
           />
           <Experience
             source={NBS}
-            title="Junior Software Engineer"
+            title="Junior Software Engineer (Co-op)"
             company="NorthBay Solutions"
             dateRange="May 2023 – Aug 2023"
+          />
+          <Experience
+            source={DalCSS}
+            title="Vice President External"
+            company="Dalhousie Computer Science Society"
+            dateRange="May 2024 – May 2025"
           />
         </div>
       </section>

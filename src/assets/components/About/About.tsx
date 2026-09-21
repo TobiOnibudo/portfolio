@@ -20,20 +20,18 @@ function About() {
         </div>
         <div className="min-w-0 space-y-4 rounded-2xl border border-border bg-card/40 p-6 shadow-sm ring-1 ring-foreground/5 sm:p-8">
           <h2 className="font-heading text-xl font-semibold text-foreground">
-            How I work
+            Hi, I&apos;m Tobi
           </h2>
           <p className="text-pretty leading-relaxed text-muted-foreground">
-            I&apos;m Tobi Onibudo, a software engineer at CPP Investments (CPPIB) in
-            Toronto. I build solutions end to end, from services and data through to
-            the UI.
+            I build software and love turning ideas into products. Currently a software
+            engineer at CPP Investments, focused on Legal &amp; Public Market Compliance
+            technology.
           </p>
           <p className="text-pretty leading-relaxed text-muted-foreground">
-            I studied Computer Science with an Economics minor at Dalhousie, including
-            co-ops at Dash Social (creator SaaS) and NorthBay Solutions (fintech). On
-            campus I was VP External for the Dalhousie Computer Science Society and a
-            ShiftKey Labs ambassador, and I&apos;m part of ColorStack. I like shipping
-            work that trims manual steps, clarifies interfaces, and shortens feedback
-            loops. I also care about growing with the people around me. Say hello on{" "}
+            I studied Computer Science with an Economics minor at Dalhousie, with
+            co-ops at CPP Investments, Dash Social, and NorthBay Solutions. On campus
+            I was VP External for the Dalhousie Computer Science Society and a
+            ShiftKey Labs ambassador. Say hello on{" "}
             <a
               className="font-medium text-primary underline-offset-4 hover:underline"
               href="https://www.linkedin.com/in/tobi-onibudo/"

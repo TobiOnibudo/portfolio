@@ -7,42 +7,66 @@ import { cn } from "@/lib/utils"
 /** Home marquee: same set and order as `Projects/Projects.tsx`. */
 const SNIPPETS = [
   {
-    title: "Threads Clone",
+    title: "VendorLens AI",
     description:
-      "Threads-style social app with Clerk authentication, threaded posts and replies, and MongoDB-backed feeds.",
-    href: "https://github.com/TobiOnibudo/threads",
-    liveUrl: "https://threads-eight-theta.vercel.app/",
+      "Vendor management platform with AI contract extraction, renewal tracking, and duplicate tool detection.",
+    href: "https://github.com/TobiOnibudo/vendor_lens",
+  },
+  {
+    title: "Aegis Core",
+    description:
+      "Python SDK and dashboard for AI agent policy enforcement with YAML policies and a full audit trail.",
+    href: "https://github.com/AegisStack/aegis-core",
   },
   {
     title: "Vayro",
     description:
-      "Moving-sale marketplace: listings, chat, AI price hints, maps, Firebase auth and data.",
+      "Marketplace app using generative AI for pricing and selling household items with maps and Firebase auth.",
     href: "https://github.com/TobiOnibudo/vayro",
-  },
-  {
-    title: "CartCloud",
-    description:
-      "A multi-vendor storefront with checkout flows and basic seller tools.",
-    href: "https://github.com/TobiOnibudo/cartcloud",
-    liveUrl: "https://cartcloud.netlify.app/",
   },
   {
     title: "Atlantic AI Summit: HealthByte (1st place)",
     description:
-      "Healthcare hackathon (~60 hr, 1st place): dual LLM agents iterate on health messaging; dashboard visualizes persona metrics and runs.",
+      "Hackathon winner (60 hrs). Dual LLM agents iterate on health messaging with a live metrics dashboard.",
     href: "https://github.com/TobiOnibudo/atlantic-ai-conference-hackathon",
     liveUrl: "https://healthbyte-dashboard.vercel.app/",
   },
   {
+    title: "Ollama non-sudo installer",
+    description:
+      "Per-user Ollama install on Windows, Linux, or macOS without admin rights.",
+    href: "https://github.com/TobiOnibudo/ollama-non-sudo-installer",
+  },
+  {
+    title: "Daltweets",
+    description:
+      "Twitter-style campus feed with a Spring Boot API, React UI, and SQL-backed data.",
+    href: "https://github.com/TobiOnibudo/Daltweets",
+  },
+  {
+    title: "Threads Clone",
+    description:
+      "Social app with Clerk auth, threaded posts and replies, and MongoDB-backed feeds.",
+    href: "https://github.com/TobiOnibudo/threads",
+    liveUrl: "https://threads-eight-theta.vercel.app/",
+  },
+  {
+    title: "CartCloud",
+    description:
+      "Multi-vendor storefront with checkout flows and basic seller tools.",
+    href: "https://github.com/TobiOnibudo/cartcloud",
+    liveUrl: "https://cartcloud.netlify.app/",
+  },
+  {
     title: "Ecommerce WebApp",
     description:
-      "A simple retail-style site with products grouped by category and a cart through checkout.",
+      "Retail site with products by category and a cart through checkout.",
     href: "https://github.com/TobiOnibudo/Ecommerce",
   },
   {
     title: "Personal Library",
     description:
-      "An Android app for tracking books you plan to read and books you have finished, using on-device SQL storage.",
+      "Android app for tracking books to read and finished reads using on-device SQL storage.",
     href: "https://github.com/TobiOnibudo/Book",
   },
   {
@@ -50,18 +74,6 @@ const SNIPPETS = [
     description:
       "Posts and comments with a Node backend and database-backed pages.",
     href: "https://github.com/TobiOnibudo/BlogWebsite",
-  },
-  {
-    title: "Ollama non-sudo installer",
-    description:
-      "Per-user Ollama install on Windows, Linux, or macOS without admin rights; includes PATH and uninstall notes.",
-    href: "https://github.com/TobiOnibudo/ollama-non-sudo-installer",
-  },
-  {
-    title: "Daltweets",
-    description:
-      "Twitter-style campus feed: Spring Boot API, React UI, and SQL-backed data.",
-    href: "https://github.com/TobiOnibudo/Daltweets",
   },
 ] as const
 

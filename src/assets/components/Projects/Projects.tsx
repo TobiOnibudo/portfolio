@@ -10,6 +10,7 @@ import {
   SiNextdotjs,
   SiPython,
   SiSpringboot,
+  SiSupabase,
   SiTypescript,
 } from "react-icons/si"
 
@@ -29,6 +30,7 @@ function Projects() {
   const python = { id: 15, reactIcon: <SiPython /> }
   const expo = { id: 16, reactIcon: <SiExpo /> }
   const springboot = { id: 17, reactIcon: <SiSpringboot /> }
+  const supabase = { id: 18, reactIcon: <SiSupabase /> }
 
   return (
     <div>
@@ -67,44 +69,65 @@ function Projects() {
       >
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-5 sm:gap-6 md:grid-cols-2 xl:grid-cols-3">
           <Project
+            Title="VendorLens AI"
+            description="Vendor management platform with AI contract extraction, renewal tracking, and duplicate tool detection."
+            link="https://github.com/TobiOnibudo/vendor_lens"
+            stack={[nextjs, typescript, supabase, python]}
+          />
+          <Project
+            Title="Aegis Core"
+            description="Python SDK and dashboard for AI agent policy enforcement with YAML policies and a full audit trail."
+            link="https://github.com/AegisStack/aegis-core"
+            stack={[python, nextjs, typescript]}
+          />
+          <Project
+            Title="Vayro"
+            description="Marketplace app using generative AI for pricing and selling household items with maps and Firebase auth."
+            link="https://github.com/TobiOnibudo/vayro"
+            stack={[typescript, react, expo, firebase]}
+          />
+          <Project
+            Title="Atlantic AI Summit: HealthByte (1st place)"
+            description="Hackathon winner (60 hrs). Dual LLM agents iterate on health messaging with a live metrics dashboard."
+            link="https://github.com/TobiOnibudo/atlantic-ai-conference-hackathon"
+            liveUrl="https://healthbyte-dashboard.vercel.app/"
+            stack={[nextjs, typescript, react, css, python]}
+          />
+          <Project
+            Title="Ollama non-sudo installer"
+            description="Per-user Ollama install on Windows, Linux, or macOS without admin rights."
+            link="https://github.com/TobiOnibudo/ollama-non-sudo-installer"
+            stack={[golang]}
+          />
+          <Project
+            Title="Daltweets"
+            description="Twitter-style campus feed with a Spring Boot API, React UI, and SQL-backed data."
+            link="https://github.com/TobiOnibudo/Daltweets"
+            stack={[springboot, react, sql]}
+          />
+          <Project
             Title="Threads Clone"
-            description="Threads-style social app with Clerk authentication, threaded posts and replies, and MongoDB-backed feeds."
+            description="Social app with Clerk auth, threaded posts and replies, and MongoDB-backed feeds."
             link="https://github.com/TobiOnibudo/threads"
             liveUrl="https://threads-eight-theta.vercel.app/"
             stack={[nextjs, typescript, css, mongodb]}
           />
           <Project
-            Title="Vayro"
-            description="Moving-sale marketplace: listings, chat, AI price hints, maps, Firebase auth and data."
-            link="https://github.com/TobiOnibudo/vayro"
-            stack={[typescript, react, expo, firebase, css]}
-          />
-
-          <Project
             Title="CartCloud"
-            description="A multi-vendor storefront with checkout flows and basic seller tools."
+            description="Multi-vendor storefront with checkout flows and basic seller tools."
             link="https://github.com/TobiOnibudo/cartcloud"
             liveUrl="https://cartcloud.netlify.app/"
             stack={[typescript, react, css, mongodb, nodejs]}
           />
-
-          <Project
-            Title="Atlantic AI Summit: HealthByte (1st place)"
-            description="Healthcare hackathon (~60 hr, 1st place): dual LLM agents iterate on health messaging; dashboard visualizes persona metrics and runs."
-            link="https://github.com/TobiOnibudo/atlantic-ai-conference-hackathon"
-            liveUrl="https://healthbyte-dashboard.vercel.app/"
-            stack={[nextjs, typescript, react, css, python]}
-          />
-
           <Project
             Title="Ecommerce WebApp"
-            description="A simple retail-style site with products grouped by category and a cart through checkout."
+            description="Retail site with products by category and a cart through checkout."
             link="https://github.com/TobiOnibudo/Ecommerce"
             stack={[typescript, react, css, mongodb]}
           />
           <Project
             Title="Personal Library"
-            description="An Android app for tracking books you plan to read and books you have finished, using on-device SQL storage."
+            description="Android app for tracking books to read and finished reads using on-device SQL storage."
             link="https://github.com/TobiOnibudo/Book"
             stack={[kotlin, java, sql]}
           />
@@ -113,20 +136,6 @@ function Projects() {
             description="Posts and comments with a Node backend and database-backed pages."
             link="https://github.com/TobiOnibudo/BlogWebsite"
             stack={[css, javascript, nodejs, mongodb]}
-          />
-
-          <Project
-            Title="Ollama non-sudo installer"
-            description="Per-user Ollama install on Windows, Linux, or macOS without admin rights; includes PATH and uninstall notes."
-            link="https://github.com/TobiOnibudo/ollama-non-sudo-installer"
-            stack={[golang]}
-          />
-
-          <Project
-            Title="Daltweets"
-            description="Twitter-style campus feed: Spring Boot API, React UI, and SQL-backed data."
-            link="https://github.com/TobiOnibudo/Daltweets"
-            stack={[springboot, react, sql]}
           />
         </div>
       </section>
