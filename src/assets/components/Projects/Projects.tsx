@@ -79,7 +79,7 @@ function Projects() {
             stack={[nextjs, typescript, python, sql]}
           />
           <Project
-            Title="VendorLens AI"
+            Title="Vendor Lens"
             description="Vendor management platform with AI contract extraction, renewal tracking, and duplicate tool detection."
             link="https://github.com/TobiOnibudo/vendor_lens"
             liveUrl="https://vendor-lens-here.vercel.app/"

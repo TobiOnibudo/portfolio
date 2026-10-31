@@ -21,7 +21,7 @@ const SNIPPETS = [
     liveUrl: "https://fiscal-platform.vercel.app/",
   },
   {
-    title: "VendorLens AI",
+    title: "Vendor Lens",
     description:
       "Vendor management platform with AI contract extraction, renewal tracking, and duplicate tool detection.",
     href: "https://github.com/TobiOnibudo/vendor_lens",
