@@ -1,11 +1,10 @@
 import Project from "@/assets/components/Projects/Project"
 import { ChevronDown } from "lucide-react"
-import { FaDatabase, FaJava, FaNode, FaReact } from "react-icons/fa"
-import { IoLogoCss3, IoLogoFirebase, IoLogoJavascript } from "react-icons/io5"
+import { FaDatabase, FaNode, FaReact } from "react-icons/fa"
+import { IoLogoCss3, IoLogoFirebase } from "react-icons/io5"
 import {
   SiExpo,
   SiGo,
-  SiKotlin,
   SiMongodb,
   SiNextdotjs,
   SiPython,
@@ -15,10 +14,7 @@ import {
 } from "react-icons/si"
 
 function Projects() {
-  const java = { id: 1, reactIcon: <FaJava /> }
   const css = { id: 2, reactIcon: <IoLogoCss3 /> }
-  const kotlin = { id: 4, reactIcon: <SiKotlin /> }
-  const javascript = { id: 5, reactIcon: <IoLogoJavascript /> }
   const react = { id: 6, reactIcon: <FaReact /> }
   const firebase = { id: 7, reactIcon: <IoLogoFirebase /> }
   const sql = { id: 8, reactIcon: <FaDatabase /> }
@@ -69,9 +65,24 @@ function Projects() {
       >
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-stretch gap-5 sm:gap-6 md:grid-cols-2 xl:grid-cols-3">
           <Project
+            Title="Daydrift"
+            description="Plan a day in any city with a personalized itinerary built around your interests, timing, and how you want to get around."
+            link="https://github.com/TobiOnibudo/daydrift"
+            liveUrl="https://daydriftweb.up.railway.app/"
+            stack={[typescript, react, nodejs, sql]}
+          />
+          <Project
+            Title="Fiscal Platform"
+            description="Explore company financial statements in one place, with clear and organized data sourced from public reports."
+            link="https://github.com/TobiOnibudo/fiscal-platform"
+            liveUrl="https://fiscal-platform.vercel.app/"
+            stack={[nextjs, typescript, python, sql]}
+          />
+          <Project
             Title="VendorLens AI"
             description="Vendor management platform with AI contract extraction, renewal tracking, and duplicate tool detection."
             link="https://github.com/TobiOnibudo/vendor_lens"
+            liveUrl="https://vendor-lens-here.vercel.app/"
             stack={[nextjs, typescript, supabase, python]}
           />
           <Project
@@ -118,24 +129,6 @@ function Projects() {
             link="https://github.com/TobiOnibudo/cartcloud"
             liveUrl="https://cartcloud.netlify.app/"
             stack={[typescript, react, css, mongodb, nodejs]}
-          />
-          <Project
-            Title="Ecommerce WebApp"
-            description="Retail site with products by category and a cart through checkout."
-            link="https://github.com/TobiOnibudo/Ecommerce"
-            stack={[typescript, react, css, mongodb]}
-          />
-          <Project
-            Title="Personal Library"
-            description="Android app for tracking books to read and finished reads using on-device SQL storage."
-            link="https://github.com/TobiOnibudo/Book"
-            stack={[kotlin, java, sql]}
-          />
-          <Project
-            Title="Blog Website"
-            description="Posts and comments with a Node backend and database-backed pages."
-            link="https://github.com/TobiOnibudo/BlogWebsite"
-            stack={[css, javascript, nodejs, mongodb]}
           />
         </div>
       </section>

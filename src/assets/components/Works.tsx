@@ -7,10 +7,25 @@ import { cn } from "@/lib/utils"
 /** Home marquee: same set and order as `Projects/Projects.tsx`. */
 const SNIPPETS = [
   {
+    title: "Daydrift",
+    description:
+      "Plan a day in any city with a personalized itinerary built around your interests and timing.",
+    href: "https://github.com/TobiOnibudo/daydrift",
+    liveUrl: "https://daydriftweb.up.railway.app/",
+  },
+  {
+    title: "Fiscal Platform",
+    description:
+      "Explore company financial statements in one place, with clear and organized data from public reports.",
+    href: "https://github.com/TobiOnibudo/fiscal-platform",
+    liveUrl: "https://fiscal-platform.vercel.app/",
+  },
+  {
     title: "VendorLens AI",
     description:
       "Vendor management platform with AI contract extraction, renewal tracking, and duplicate tool detection.",
     href: "https://github.com/TobiOnibudo/vendor_lens",
+    liveUrl: "https://vendor-lens-here.vercel.app/",
   },
   {
     title: "Aegis Core",
@@ -56,24 +71,6 @@ const SNIPPETS = [
       "Multi-vendor storefront with checkout flows and basic seller tools.",
     href: "https://github.com/TobiOnibudo/cartcloud",
     liveUrl: "https://cartcloud.netlify.app/",
-  },
-  {
-    title: "Ecommerce WebApp",
-    description:
-      "Retail site with products by category and a cart through checkout.",
-    href: "https://github.com/TobiOnibudo/Ecommerce",
-  },
-  {
-    title: "Personal Library",
-    description:
-      "Android app for tracking books to read and finished reads using on-device SQL storage.",
-    href: "https://github.com/TobiOnibudo/Book",
-  },
-  {
-    title: "Blog Website",
-    description:
-      "Posts and comments with a Node backend and database-backed pages.",
-    href: "https://github.com/TobiOnibudo/BlogWebsite",
   },
 ] as const
 
