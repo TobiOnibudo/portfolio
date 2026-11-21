@@ -68,7 +68,7 @@ function Projects() {
             Title="Daydrift"
             description="Plan a day in any city with a personalized itinerary built around your interests, timing, and how you want to get around."
             link="https://github.com/TobiOnibudo/daydrift"
-            liveUrl="https://daydriftweb.up.railway.app/"
+            liveUrl="https://daydrift-here.vercel.app/"
             stack={[typescript, react, nodejs, sql]}
           />
           <Project
